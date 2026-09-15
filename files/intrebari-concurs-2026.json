@@ -1,0 +1,4459 @@
+{
+ "meta": {
+  "surse_utilizate": [
+   "Legea învățământului preuniversitar nr. 198/2023, cu modificările și completările ulterioare — Titlul I și Titlul III (cap. X, XI, XIII, XIV, XVI)",
+   "Metodologia concursului, aprobată prin OMEC nr. 4.155/2026 (Monitorul Oficial nr. 552 bis din 6 iulie 2026)",
+   "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026 (Monitorul Oficial nr. 664 din 11 august 2026)",
+   "Profilul profesional al managerului școlar, OMEC nr. 3.934 din 18 mai 2026 (Monitorul Oficial nr. 469 din 4 iunie 2026)",
+   "Bush, T., Leadership și management educațional, Editura Polirom — capitolul 1",
+   "Hattie, J., Învățarea vizibilă, Editura Polirom — capitolul 9"
+  ],
+  "surse_neacoperite": [
+   {
+    "sursa": "Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, OMEC nr. 5.726/2024",
+    "motiv": "Am obținut ordinul de aprobare (Monitorul Oficial nr. 795 din 12 august 2024), dar textul regulamentului este publicat ca anexă separată, marcată *) în Monitor, și nu a putut fi descărcat. Nu am generat întrebări din el pentru a nu inventa conținut."
+   },
+   {
+    "sursa": "Cadrul de Referință al Curriculumului Național, OMEC nr. 4.137/2026, Capitolul 10",
+    "motiv": "Actul nu a putut fi localizat în Portalul Legislativ (am scanat intervalele de identificatori corespunzătoare lunilor mai-august 2026) și nu apare indexat pe edu.ro. Fără textul capitolului 10 nu pot formula întrebări."
+   },
+   {
+    "sursa": "Bush, T. — capitolele 2 și 3",
+    "motiv": "PDF-ul atașat conține DOAR capitolul 1 (paginile 13-32 ale volumului, „Importanța leadershipului și a managementului educațional\"). Capitolele 2 și 3 nu se află în fișier; capitolul 1 trimite explicit la capitolul 2 pentru modelele de leadership, dar acela nu este inclus."
+   }
+  ],
+  "observatii": [
+   "Fișierul Hattie atașat este ediția 2014, nu 2024 cum apare în cerință. Conținutul este capitolul 9 integral (p. 303-351) plus Anexa A.",
+   "Ambele cărți erau scanări fără strat de text; conținutul a fost recuperat prin OCR (Tesseract 5.4, limba română). Citatele reproduc OCR-ul, pot exista mici abateri de diacritice.",
+   "Numărul de întrebări pe sursă este proporțional cu volumul de conținut testabil, nu egal — conform cerinței de a nu completa artificial.",
+   "Acoperirea vizează toate capitolele din bibliografie pentru care există text-sursă: Titlul I al Legii nr. 198/2023 (toate cele 11 capitole), Titlul III (cap. IX, X, XI, XIII, XIV, XVI), Metodologia (cap. I-V si anexa nr. 6), Calendarul, Profilul managerului școlar (toate cele 5 domenii), Bush cap. 1 și Hattie cap. 9 (toate cele 8 concepții)."
+  ],
+  "total_intrebari": 158
+ },
+ "intrebari": [
+  {
+   "id": "q001",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 19",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Conform art. 19 din Metodologie, care sunt probele concursului pentru ocuparea funcțiilor de director și director adjunct?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Proba pentru evaluarea de competențe, proba scrisă și proba de interviu"
+    },
+    {
+     "id": "b",
+     "text": "Proba scrisă, proba practică și proba de interviu"
+    },
+    {
+     "id": "c",
+     "text": "Evaluarea dosarului, proba scrisă și proba de interviu"
+    },
+    {
+     "id": "d",
+     "text": "Proba pentru evaluarea de competențe, proba scrisă și inspecția specială la clasă"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 19 enumeră exact trei probe: a) proba pentru evaluarea de competențe; b) proba scrisă; c) proba de interviu. Toate se desfășoară în limba română. Variantele greșite introduc probe care nu există în această metodologie (probă practică, inspecție specială la clasă) sau transformă verificarea dosarului într-o probă — verificarea dosarului este o etapă administrativă de eligibilitate, nu o probă de concurs."
+  },
+  {
+   "id": "q002",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 20 și Art. 21",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este nota minimă de promovare la proba pentru evaluarea de competențe, respectiv la proba scrisă?",
+   "options": [
+    {
+     "id": "a",
+     "text": "6 la ambele probe"
+    },
+    {
+     "id": "b",
+     "text": "6 la proba de competențe și 7 la proba scrisă"
+    },
+    {
+     "id": "c",
+     "text": "7 la proba de competențe și 6 la proba scrisă"
+    },
+    {
+     "id": "d",
+     "text": "7 la ambele probe"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 20 prevede promovarea probei de competențe cu cel puțin nota 6, iar art. 21 prevede promovarea probei scrise cu cel puțin nota 7. Este una dintre cele mai ușor de confundat perechi de praguri din metodologie, pentru că cele două probe au structură identică (60 de minute, 20 de itemi, 0,5 puncte pe item, evaluare automată) și diferă tocmai prin pragul de promovare. Varianta c) inversează pragurile."
+  },
+  {
+   "id": "q003",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 20",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce se întâmplă cu nota obținută la proba pentru evaluarea de competențe?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Se include în media finală cu pondere de 25%"
+    },
+    {
+     "id": "b",
+     "text": "Se include în media finală cu pondere egală cu a probei scrise"
+    },
+    {
+     "id": "c",
+     "text": "Nu se include în media finală; proba este eliminatorie"
+    },
+    {
+     "id": "d",
+     "text": "Se include în media finală doar dacă este mai mare decât nota de la proba scrisă"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 20 este explicit: „Proba este eliminatorie, nota obținută nu se include în media finală\". Capcana constă în faptul că proba se notează (de la 0 la 10, prin 20 de itemi a 0,5 puncte), deci pare o probă obișnuită care ar contribui la medie. Rolul ei este însă exclusiv de filtru. Formula notei finale de la art. 25 confirmă: N = (N_s + P_i)/2, unde intră doar proba scrisă și interviul."
+  },
+  {
+   "id": "q004",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 25",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cum se calculează nota finală a candidatului la concurs?",
+   "options": [
+    {
+     "id": "a",
+     "text": "N = (N_competențe + N_scrisă + P_interviu)/3"
+    },
+    {
+     "id": "b",
+     "text": "N = (N_scrisă + P_interviu)/2"
+    },
+    {
+     "id": "c",
+     "text": "N = 0,6 × N_scrisă + 0,4 × P_interviu"
+    },
+    {
+     "id": "d",
+     "text": "N = (N_scrisă + P_interviu + nota dosarului)/3"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 25 stabilește formula N = (N_s + P_i)/2, unde N_s este nota la proba scrisă și P_i punctajul la proba de interviu. Nota finală se exprimă cu două zecimale, fără rotunjire. Proba de competențe nu apare în formulă, fiind eliminatorie. Nu există ponderi diferențiate și nici notă pentru dosar."
+  },
+  {
+   "id": "q005",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 25",
+   "tip": "capcana",
+   "dificultate": "mediu",
+   "prompt": "Cum se exprimă nota finală obținută la concurs?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cu două zecimale, fără rotunjire"
+    },
+    {
+     "id": "b",
+     "text": "Cu două zecimale, cu rotunjire la cea mai apropiată sutime"
+    },
+    {
+     "id": "c",
+     "text": "Cu trei zecimale, fără rotunjire"
+    },
+    {
+     "id": "d",
+     "text": "Ca număr întreg, prin rotunjire la cel mai apropiat întreg"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 25 precizează „cu două zecimale, fără rotunjire\". Detaliul contează practic: la departajarea candidaților, trunchierea (nu rotunjirea) poate schimba ordinea. De exemplu, o medie de 8,799 devine 8,79, nu 8,80."
+  },
+  {
+   "id": "q006",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 20 și Art. 21",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Care este structura testului la proba pentru evaluarea de competențe și la proba scrisă?",
+   "options": [
+    {
+     "id": "a",
+     "text": "30 de itemi, maximum 90 de minute, 0,33 puncte pe item"
+    },
+    {
+     "id": "b",
+     "text": "20 de itemi cu un singur răspuns corect, maximum 60 de minute, 0,5 puncte pe item"
+    },
+    {
+     "id": "c",
+     "text": "20 de itemi cu răspunsuri multiple, maximum 120 de minute, 0,5 puncte pe item"
+    },
+    {
+     "id": "d",
+     "text": "10 itemi și un studiu de caz, maximum 60 de minute"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Atât art. 20, cât și art. 21 descriu un test standardizat cu 20 de itemi cu un singur răspuns corect, rezolvat în maximum 60 de minute, fiecare item corect valorând 0,5 puncte. 20 × 0,5 = 10 puncte, adică nota maximă. Atenție: itemii au un SINGUR răspuns corect, nu răspunsuri multiple."
+  },
+  {
+   "id": "q007",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 21",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cine asigură elaborarea subiectelor pentru proba de evaluare a competențelor și pentru proba scrisă?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Comisia de organizare a concursului de la nivelul fiecărui inspectorat școlar"
+    },
+    {
+     "id": "b",
+     "text": "Centrul Național pentru Curriculum și Evaluare, în colaborare cu experți în științele educației și specialiști în psihometrie"
+    },
+    {
+     "id": "c",
+     "text": "Comisia națională de monitorizare și coordonare a concursului"
+    },
+    {
+     "id": "d",
+     "text": "Agenția Română de Asigurare a Calității în Învățământul Preuniversitar"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 21 atribuie elaborarea subiectelor Centrului Național pentru Curriculum și Evaluare, care lucrează cu experți în domeniul științelor educației și specialiști în psihometrie, selectați printr-o procedură proprie și numiți prin ordin de ministru. Tot CNCE răspunde de transmiterea testelor către centrele de concurs în condiții de securitate informatică. Comisiile județene organizează desfășurarea, nu elaborează subiectele."
+  },
+  {
+   "id": "q008",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 22 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care este numărul maxim de pagini al proiectului planului managerial depus de candidat?",
+   "options": [
+    {
+     "id": "a",
+     "text": "10 pagini format A4"
+    },
+    {
+     "id": "b",
+     "text": "15 pagini format A4"
+    },
+    {
+     "id": "c",
+     "text": "20 de pagini format A4"
+    },
+    {
+     "id": "d",
+     "text": "Nu există limită, dar se recomandă concizia"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 22 alin. (1) lit. a) prevede că „Proiectul planului managerial va avea maximum 15 pagini format A4\". Evaluarea administrativă a acestuia se face pe baza grilei din anexa nr. 6 la metodologie, în plenul comisiei, la sediul centrului de evaluare a interviului."
+  },
+  {
+   "id": "q009",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 22 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care este durata maximă a interviului pentru fiecare candidat și cum se stabilește nota?",
+   "options": [
+    {
+     "id": "a",
+     "text": "30 de minute; nota este acordată de președintele comisiei"
+    },
+    {
+     "id": "b",
+     "text": "45 de minute; nota este media aritmetică a notelor acordate de cei cinci membri ai comisiei"
+    },
+    {
+     "id": "c",
+     "text": "60 de minute; nota este media aritmetică a notelor acordate de trei membri"
+    },
+    {
+     "id": "d",
+     "text": "45 de minute; nota este mediana notelor acordate de cei cinci membri"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 22 alin. (1) stabilește că interviul are durata de cel mult 45 de minute pentru fiecare candidat, care este evaluat prin note de la 0 la 10 de către fiecare membru, nota finală fiind media aritmetică a notelor acordate de cei cinci membri ai comisiei de evaluare. Nu se folosește mediana, iar comisia are cinci membri, nu trei."
+  },
+  {
+   "id": "q010",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 22 alin. (2)-(5)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "La proba de interviu, ce diferență maximă se admite între notele acordate de oricare doi evaluatori și ce se întâmplă dacă este depășită?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Maximum 2 puncte; dacă se depășește, se elimină automat nota extremă"
+    },
+    {
+     "id": "b",
+     "text": "Maximum 3 puncte; dacă se depășește, președintele comisiei are obligația să medieze divergențele"
+    },
+    {
+     "id": "c",
+     "text": "Maximum 3 puncte; dacă se depășește, candidatul susține un nou interviu"
+    },
+    {
+     "id": "d",
+     "text": "Maximum 1 punct; dacă se depășește, comisia se dizolvă"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 22 alin. (2) prevede că nu se admit diferențe mai mari de trei puncte între notele oricăror doi evaluatori, iar alin. (3) obligă președintele comisiei să medieze divergențele. Capcana: în procedură apar DOUĂ praguri diferite — 3 puncte între evaluatori (alin. 2) și 2 puncte la alin. (5), unde, dacă după mediere diferența dintre media calculată și una sau mai multe note depășește două puncte, nota sau notele respective se elimină din calculul mediei. Confuzia dintre cele două praguri este frecventă."
+  },
+  {
+   "id": "q011",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 24 alin. (2)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Unde se soluționează contestațiile depuse la proba de interviu?",
+   "options": [
+    {
+     "id": "a",
+     "text": "La nivelul aceleiași comisii care a evaluat interviul"
+    },
+    {
+     "id": "b",
+     "text": "La nivelul comisiilor constituite în alt județ decât cel în care a avut loc proba"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv la nivelul Ministerului Educației și Cercetării"
+    },
+    {
+     "id": "d",
+     "text": "La nivelul consiliului de administrație al unității de învățământ"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 24 alin. (2) prevede soluționarea contestațiilor la nivelul comisiilor constituite în ALT județ decât cel în care are loc proba de interviu, conform repartizării realizate de comisia națională de monitorizare și coordonare. Mecanismul urmărește imparțialitatea. Pentru aceasta se transmit copii ale înregistrărilor audio-video."
+  },
+  {
+   "id": "q012",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 24 alin. (4)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce regim juridic are punctajul acordat de comisia de soluționare a contestațiilor?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Este provizoriu și poate fi recontestat la comisia națională"
+    },
+    {
+     "id": "b",
+     "text": "Este definitiv și poate fi atacat numai la instanța de contencios administrativ competentă"
+    },
+    {
+     "id": "c",
+     "text": "Este definitiv și nu poate fi atacat în nicio formă"
+    },
+    {
+     "id": "d",
+     "text": "Poate fi modificat de inspectorul școlar general"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 24 alin. (4): punctajul acordat de comisia de soluționare a contestațiilor este definitiv și poate fi atacat numai la instanța de contencios administrativ competentă. Varianta c) este capcana: „definitiv\" în procedura administrativă nu înseamnă că este sustras controlului judecătoresc."
+  },
+  {
+   "id": "q013",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 3 alin. (1) lit. c)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Ce vechime minimă în învățământul preuniversitar trebuie să aibă un candidat la funcția de director?",
+   "options": [
+    {
+     "id": "a",
+     "text": "3 ani"
+    },
+    {
+     "id": "b",
+     "text": "5 ani"
+    },
+    {
+     "id": "c",
+     "text": "7 ani"
+    },
+    {
+     "id": "d",
+     "text": "10 ani"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 3 alin. (1) lit. c) cere o vechime în învățământul preuniversitar de minimum 5 ani. Condițiile de la art. 3 alin. (1) sunt CUMULATIVE — neîndeplinirea oricăreia atrage respingerea dosarului."
+  },
+  {
+   "id": "q014",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 3 alin. (1) lit. d)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce calificativ trebuie să fi obținut candidatul și pe ce perioadă?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cel puțin „Bine\" în ultimii 3 ani școlari încheiați"
+    },
+    {
+     "id": "b",
+     "text": "„Foarte bine\" în ultimii 2 ani școlari încheiați lucrați efectiv la catedră sau în funcții de conducere"
+    },
+    {
+     "id": "c",
+     "text": "„Foarte bine\" în ultimii 5 ani școlari"
+    },
+    {
+     "id": "d",
+     "text": "„Foarte bine\" doar în anul școlar precedent"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 3 alin. (1) lit. d) cere calificativul „Foarte bine\" acordat în ultimii 2 ani școlari ÎNCHEIAȚI lucrați EFECTIV la catedră în funcții didactice și/sau în funcții de conducere din unități de învățământ, inspectorate, CCD, Palatul Național al Copiilor, minister ori în funcții de îndrumare și control. Capcanele: nu este suficient „Bine\", perioada este de 2 ani (nu 3 sau 5), iar anii trebuie să fie încheiați și efectiv lucrați — nu se iau în calcul anii de suspendare a activității."
+  },
+  {
+   "id": "q015",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 3 alin. (1) lit. e)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Un candidat a fost sancționat disciplinar acum trei ani, iar sancțiunea a fost radiată de drept potrivit art. 248 alin. (3) din Codul muncii. Poate participa la concurs?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nu, orice sancțiune disciplinară din trecut îl exclude definitiv"
+    },
+    {
+     "id": "b",
+     "text": "Da, întrucât condiția este îndeplinită și prin intervenirea radierii de drept a sancțiunii"
+    },
+    {
+     "id": "c",
+     "text": "Da, dar numai cu avizul consiliului de administrație al unității"
+    },
+    {
+     "id": "d",
+     "text": "Nu, decât dacă au trecut minimum 5 ani de la sancțiune"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 3 alin. (1) lit. e) formulează condiția alternativ: candidatul nu trebuie să fi fost sancționat disciplinar în anul școlar curent și în ultimii 2 ani școlari încheiați „sau a intervenit radierea de drept a sancțiunii, potrivit art. 248 alin. (3) din Legea nr. 53/2003 — Codul muncii\". Radierea de drept produce deci efectul de a repune candidatul în situația de eligibilitate."
+  },
+  {
+   "id": "q016",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 28 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cu cât timp înainte de prima probă trebuie publicate de către minister procedurile de organizare și desfășurare a probelor?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cu cel puțin 5 zile înainte"
+    },
+    {
+     "id": "b",
+     "text": "Cu cel puțin 10 zile înainte"
+    },
+    {
+     "id": "c",
+     "text": "Cu cel puțin 15 zile înainte"
+    },
+    {
+     "id": "d",
+     "text": "Cu cel puțin 30 de zile înainte"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 28 alin. (1) prevede că organizarea și desfășurarea probelor se realizează conform procedurilor elaborate și publicate de Ministerul Educației și Cercetării cu cel puțin 15 zile înainte de data desfășurării primei probe. Inspectoratul școlar, prin comisia de organizare, răspunde de aplicarea și respectarea procedurii."
+  },
+  {
+   "id": "q017",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 17 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cu cât timp înainte de prima probă de interviu hotărăște consiliul de administrație al inspectoratului școlar constituirea comisiilor de evaluare?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cu cel puțin 5 zile calendaristice înainte"
+    },
+    {
+     "id": "b",
+     "text": "Cu cel puțin 15 zile înainte"
+    },
+    {
+     "id": "c",
+     "text": "Cu cel puțin 5 zile lucrătoare înainte"
+    },
+    {
+     "id": "d",
+     "text": "În ziua premergătoare primei probe de interviu"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 17 alin. (1) prevede „cu cel puțin 5 zile calendaristice înainte de data la care se desfășoară prima probă de interviu\". Dublă capcană: se confundă ușor cu termenul de 15 zile pentru publicarea procedurilor (art. 28) și, în plus, metodologia spune expres zile CALENDARISTICE, nu lucrătoare — distincție care schimbă calculul termenului."
+  },
+  {
+   "id": "q018",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Anexa nr. 6 — grila de evaluare a proiectului planului managerial",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cărei secțiuni din grila de evaluare a proiectului planului managerial îi corespunde analiza diagnostic a unității de învățământ?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Secțiunea 1 — Fundamentarea proiectului și analiza diagnostic"
+    },
+    {
+     "id": "b",
+     "text": "Secțiunea 2 — Activități curente de funcționare a unității de învățământ"
+    },
+    {
+     "id": "c",
+     "text": "Secțiunea 3 — Activități care țin de dezvoltarea școlii"
+    },
+    {
+     "id": "d",
+     "text": "Secțiunea 4 — Monitorizare, evaluare și indicatori de performanță"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Grila din anexa nr. 6 are patru secțiuni, iar analiza diagnostic aparține Secțiunii 1, „Fundamentarea proiectului și analiza diagnostic\", punctată cu maximum 15 puncte. Secțiunea 4, tot de maximum 15 puncte, vizează monitorizarea, evaluarea și indicatorii de performanță — deci partea de urmărire a implementării, nu cea de analiză inițială."
+  },
+  {
+   "id": "q019",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar, sesiunea august-decembrie 2026",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "La ce dată a avut loc anunțarea concursului, respectiv publicarea funcțiilor vacante?",
+   "options": [
+    {
+     "id": "a",
+     "text": "1 august 2026"
+    },
+    {
+     "id": "b",
+     "text": "17 august 2026"
+    },
+    {
+     "id": "c",
+     "text": "1 septembrie 2026"
+    },
+    {
+     "id": "d",
+     "text": "14 septembrie 2026"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Prima etapă din calendar este datată 17 august: anunțarea concursului, adică publicarea funcțiilor vacante de director și director adjunct din unitățile cu personalitate juridică cuprinse în rețeaua școlară aferentă anului 2026-2027. Data de 14 septembrie marchează începutul depunerii dosarelor, nu anunțarea."
+  },
+  {
+   "id": "q020",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este perioada de depunere a dosarelor de înscriere și care este perioada de verificare a acestora?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Depunere 14 septembrie - 2 octombrie; verificare 15 septembrie - 7 octombrie"
+    },
+    {
+     "id": "b",
+     "text": "Depunere și verificare simultan, 14 septembrie - 2 octombrie"
+    },
+    {
+     "id": "c",
+     "text": "Depunere 15 septembrie - 7 octombrie; verificare 14 septembrie - 2 octombrie"
+    },
+    {
+     "id": "d",
+     "text": "Depunere 1-14 septembrie; verificare 15 septembrie - 7 octombrie"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Calendarul prevede depunerea dosarelor între 14 septembrie și 2 octombrie, iar verificarea între 15 septembrie și 7 octombrie. Cele două perioade se SUPRAPUN parțial, dar nu coincid: verificarea începe cu o zi mai târziu și se încheie cu cinci zile mai târziu decât depunerea. Varianta c) inversează intervalele."
+  },
+  {
+   "id": "q021",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "La ce dată s-a desfășurat proba scrisă în sesiunea august-decembrie 2026?",
+   "options": [
+    {
+     "id": "a",
+     "text": "13 octombrie"
+    },
+    {
+     "id": "b",
+     "text": "15 octombrie"
+    },
+    {
+     "id": "c",
+     "text": "20 octombrie"
+    },
+    {
+     "id": "d",
+     "text": "22 octombrie"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Proba scrisă, urmată de afișarea rezultatelor, este programată pe 20 octombrie. Data de 13 octombrie este proba pentru evaluarea de competențe, 15 octombrie este soluționarea contestațiilor la proba de competențe, iar 22 octombrie este soluționarea contestațiilor la proba scrisă."
+  },
+  {
+   "id": "q022",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cărei etape îi corespunde data de 13 octombrie în calendarul concursului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Desfășurarea probei pentru evaluarea de competențe și afișarea rezultatelor"
+    },
+    {
+     "id": "b",
+     "text": "Afișarea listei finale a candidaților admiși după verificarea dosarelor"
+    },
+    {
+     "id": "c",
+     "text": "Stabilirea centrelor de concurs și repartizarea candidaților"
+    },
+    {
+     "id": "d",
+     "text": "Desfășurarea probei scrise"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Pe 13 octombrie se desfășoară proba pentru evaluarea de competențe, în cadrul căreia se testează capacitățile și aptitudinile personale, urmată de afișarea rezultatelor. Lista finală a candidaților admiși se afișează pe 9 octombrie, stabilirea centrelor are loc pe 12 octombrie, iar proba scrisă pe 20 octombrie."
+  },
+  {
+   "id": "q023",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "În ce perioadă se desfășoară probele de interviu?",
+   "options": [
+    {
+     "id": "a",
+     "text": "10-11 noiembrie"
+    },
+    {
+     "id": "b",
+     "text": "12-27 noiembrie"
+    },
+    {
+     "id": "c",
+     "text": "21 octombrie - 4 noiembrie"
+    },
+    {
+     "id": "d",
+     "text": "12 noiembrie - 2 decembrie"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Probele de interviu se desfășoară în perioada 12-27 noiembrie. Intervalul 10-11 noiembrie este destinat programării interviurilor, 21 octombrie - 4 noiembrie evaluării administrative a planurilor manageriale, iar 12 noiembrie - 2 decembrie depunerii contestațiilor la proba de interviu — acesta din urmă se suprapune peste perioada interviurilor, pentru că termenul de contestație curge de la afișarea rezultatului fiecărui candidat."
+  },
+  {
+   "id": "q024",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "La ce dată se afișează rezultatele finale ale concursului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "7 decembrie"
+    },
+    {
+     "id": "b",
+     "text": "9 decembrie"
+    },
+    {
+     "id": "c",
+     "text": "11 decembrie"
+    },
+    {
+     "id": "d",
+     "text": "16 decembrie"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Rezultatele finale ale concursului se afișează pe 9 decembrie. Pe 7 decembrie se încheie soluționarea contestațiilor la interviu, pe 11 decembrie se validează rezultatele în consiliul de administrație al inspectoratului, iar până pe 16 decembrie se emit deciziile de numire."
+  },
+  {
+   "id": "q025",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Până la ce dată se emit deciziile de numire și de când intră acestea în vigoare?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Până la 9 decembrie, cu intrare în vigoare de la 1 ianuarie 2027"
+    },
+    {
+     "id": "b",
+     "text": "Până la 16 decembrie, cu intrare în vigoare de la data emiterii"
+    },
+    {
+     "id": "c",
+     "text": "Până la 16 decembrie, cu intrare în vigoare de la 1 ianuarie 2027"
+    },
+    {
+     "id": "d",
+     "text": "Până la 11 decembrie, cu intrare în vigoare de la 1 septembrie 2027"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Ultima etapă din calendar prevede emiterea și comunicarea deciziilor de numire până la data de 16 decembrie, „cu intrare în vigoare de la 1 ianuarie 2027\". Capcana este decalajul dintre data emiterii deciziei și data producerii efectelor — directorul numit în decembrie 2026 începe mandatul abia de la 1 ianuarie 2027."
+  },
+  {
+   "id": "q026",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Ce etapă este programată pe 10 decembrie?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Validarea rezultatelor finale în consiliul de administrație al inspectoratului școlar"
+    },
+    {
+     "id": "b",
+     "text": "Exprimarea opțiunilor candidaților declarați admiși pentru mai multe funcții sau unități de învățământ"
+    },
+    {
+     "id": "c",
+     "text": "Afișarea rezultatelor finale ale concursului"
+    },
+    {
+     "id": "d",
+     "text": "Soluționarea contestațiilor la proba de interviu"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Pe 10 decembrie, candidații declarați admiși pentru mai multe funcții sau unități de învățământ își exprimă opțiunea. Este o etapă distinctă, necesară pentru că un candidat poate promova la mai multe posturi. Validarea în consiliul de administrație al inspectoratului are loc a doua zi, pe 11 decembrie."
+  },
+  {
+   "id": "q027",
+   "sursa_document": "Calendarul concursului, Anexa nr. 1 la OMEC nr. 4.622/2026",
+   "sectiune": "Anexa nr. 1 — calendar",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este ordinea corectă a termenelor privind constituirea comisiilor de evaluare a probei de interviu?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Înregistrarea listelor de membri până la 7 octombrie, apoi emiterea deciziilor de constituire până la 9 octombrie"
+    },
+    {
+     "id": "b",
+     "text": "Emiterea deciziilor până la 7 octombrie, apoi înregistrarea listelor până la 9 octombrie"
+    },
+    {
+     "id": "c",
+     "text": "Ambele operațiuni până la 9 octombrie"
+    },
+    {
+     "id": "d",
+     "text": "Înregistrarea listelor până la 9 septembrie, emiterea deciziilor până la 7 octombrie"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Calendarul prevede „până la data de 7 octombrie\" înregistrarea la inspectorate a listelor persoanelor desemnate ca membri/supleanți, iar „până la data de 9 octombrie\" emiterea deciziilor de constituire a comisiilor. Ordinea logică — întâi listele, apoi deciziile — este și cea cronologică. În perioada 7-9 septembrie au loc doar transmiterea solicitărilor de desemnare, nu înregistrarea listelor."
+  },
+  {
+   "id": "q028",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II — Arhitectura profilului",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Pe câte niveluri este organizat profilul profesional al managerului școlar și care sunt acestea?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Trei: axiologic, profesional și funcțional"
+    },
+    {
+     "id": "b",
+     "text": "Patru: axiologic, transversal, profesional și funcțional"
+    },
+    {
+     "id": "c",
+     "text": "Cinci: axiologic, transversal, profesional, funcțional și operațional"
+    },
+    {
+     "id": "d",
+     "text": "Două: competențe generale și competențe specifice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Capitolul II descrie patru niveluri complementare: axiologic (valori fundamentale), transversal (competențe transversale), profesional (competențe generale și specifice) și funcțional (descriptori comportamentali). Varianta c) adaugă un nivel inexistent, iar a) omite nivelul transversal, care cuprinde precondițiile cognitive și relaționale."
+  },
+  {
+   "id": "q029",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. D",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cărui nivel al profilului îi corespund „comportamentele observabile și măsurabile\" asociate fiecărei competențe specifice?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nivelul axiologic"
+    },
+    {
+     "id": "b",
+     "text": "Nivelul transversal"
+    },
+    {
+     "id": "c",
+     "text": "Nivelul profesional"
+    },
+    {
+     "id": "d",
+     "text": "Nivelul funcțional"
+    }
+   ],
+   "correct_option_id": "d",
+   "explicatie": "Nivelul funcțional este definit ca fiind cel al descriptorilor comportamentali — „comportamente observabile și măsurabile, asociate fiecărei competențe specifice\". Nivelul profesional conține competențele în sine, nu manifestările lor observabile."
+  },
+  {
+   "id": "q030",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Câte domenii de competență cuprinde nivelul profesional al profilului managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Trei"
+    },
+    {
+     "id": "b",
+     "text": "Patru"
+    },
+    {
+     "id": "c",
+     "text": "Cinci"
+    },
+    {
+     "id": "d",
+     "text": "Șapte"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Profilul este structurat pe cinci domenii de competență: 1) leadership educațional, guvernanță instituțională și orientare strategică; 2) management operațional administrativ-financiar și conformitate; 3) managementul calității și evaluare internă; 4) managementul curriculumului, al proceselor de învățare și evaluare, dezvoltarea profesională a cadrelor didactice; 5) comunicare, relaționare, parteneriate și colaborare în comunitate. Cifra șapte corespunde competențelor TRANSVERSALE, nu domeniilor."
+  },
+  {
+   "id": "q031",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C, domeniul 4",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Cărui domeniu de competență îi aparține „managementul resurselor umane\"?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Domeniul 1 — Leadership educațional, guvernanță instituțională și orientare strategică"
+    },
+    {
+     "id": "b",
+     "text": "Domeniul 2 — Management operațional administrativ-financiar și conformitate"
+    },
+    {
+     "id": "c",
+     "text": "Domeniul 4 — Managementul curriculumului, al proceselor de învățare și evaluare, dezvoltarea profesională a cadrelor didactice"
+    },
+    {
+     "id": "d",
+     "text": "Domeniul 5 — Comunicare, relaționare, parteneriate și colaborare în comunitate"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Competența specifică 4.1 „Managementul resurselor umane\" este plasată în domeniul 4, alături de managementul implementării curriculumului, cercetare și inovație pedagogică, respectiv asigurarea succesului școlar. Plasarea poate surprinde — intuitiv, resursele umane par a ține de managementul operațional (domeniul 2) — dar profilul le leagă de dezvoltarea profesională a cadrelor didactice."
+  },
+  {
+   "id": "q032",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul I — Context",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este natura juridică a Profilului profesional al managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Este fișa de post a directorului de unitate de învățământ"
+    },
+    {
+     "id": "b",
+     "text": "Nu se constituie într-o fișă de post, ci descrie așteptările față de managerul școlar în termeni de competențe"
+    },
+    {
+     "id": "c",
+     "text": "Este un ghid orientativ, fără caracter normativ"
+    },
+    {
+     "id": "d",
+     "text": "Este un regulament de organizare internă a unității"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Capitolul I precizează expres: „Profilul propus nu se constituie într-o fișă de post, ci descrie așteptările exprimate față de managerul școlar în termeni de competențe și, în aceeași măsură, reia atribuțiile directorului\". Varianta c) este greșită în sens contrar: profilul este aprobat prin ordin de ministru publicat în Monitorul Oficial, deci are caracter normativ, chiar dacă nu este fișă de post."
+  },
+  {
+   "id": "q033",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul I — Context",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Conform profilului, în ce raport se află sintagmele „manager școlar\" și „director de unitate de învățământ preuniversitar\"?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sunt asimilate"
+    },
+    {
+     "id": "b",
+     "text": "Managerul școlar este superior ierarhic directorului"
+    },
+    {
+     "id": "c",
+     "text": "Managerul școlar desemnează exclusiv directorul adjunct"
+    },
+    {
+     "id": "d",
+     "text": "Sunt funcții distincte, cu atribuții diferite"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Raportat la prevederile Legii nr. 198/2023, profilul precizează că sintagmele „manager școlar\" și „director de unitate de învățământ preuniversitar\" sunt asimilate. Documentul îl definește pe director drept „liderul pedagogic, strategic și organizațional al instituției\"."
+  },
+  {
+   "id": "q034",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. A — valori fundamentale",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Care dintre următoarele NU figurează printre valorile fundamentale ale profilului managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Interesul superior al elevului"
+    },
+    {
+     "id": "b",
+     "text": "Etică și integritate profesională"
+    },
+    {
+     "id": "c",
+     "text": "Competitivitatea între unitățile de învățământ"
+    },
+    {
+     "id": "d",
+     "text": "Parteneriat cu familia și comunitatea"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Profilul enumeră șase valori: interesul superior al elevului; echitate, incluziune și justiție socială; leadership pedagogic și cultură a învățării; etică și integritate profesională; inițiativă și antreprenoriat; parteneriat cu familia și comunitatea. Competitivitatea între școli nu apare — orientarea documentului este spre echitate și colaborare, nu spre concurență interinstituțională."
+  },
+  {
+   "id": "q035",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. B — competențe transversale",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "Ce prevede profilul în privința competențelor lingvistice ale managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Competențe de comunicare profesională exclusiv în limba română"
+    },
+    {
+     "id": "b",
+     "text": "Competențe lingvistice și de comunicare profesională în limba română și într-o limbă de circulație internațională"
+    },
+    {
+     "id": "c",
+     "text": "Cunoașterea obligatorie a două limbi de circulație internațională"
+    },
+    {
+     "id": "d",
+     "text": "Cunoașterea unei limbi a minorităților naționale"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Printre cele șapte competențe transversale figurează „competențe lingvistice și de comunicare profesională — în limba română și într-o limbă de circulație internațională, pentru redactare, argumentare și reprezentare instituțională\". Cunoașterea unei limbi a minorităților este o cerință separată, prevăzută de art. 195 alin. (1) din Legea nr. 198/2023, aplicabilă doar unităților cu predare în limbile minorităților."
+  },
+  {
+   "id": "q036",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. B — competențe transversale",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cum este denumită în profil capacitatea de adaptare și învățare continuă în contexte de schimbare și incertitudine?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Leadership transformațional"
+    },
+    {
+     "id": "b",
+     "text": "Leadership adaptativ"
+    },
+    {
+     "id": "c",
+     "text": "Leadership distribuit"
+    },
+    {
+     "id": "d",
+     "text": "Leadership tranzacțional"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Profilul denumește această competență transversală „capacitate de adaptare și învățare continuă (leadership adaptativ) — în contexte de schimbare, incertitudine și complexitate sistemică\". Celelalte denumiri sunt modele de leadership din literatura de specialitate, nu termenii folosiți de acest act normativ."
+  },
+  {
+   "id": "q037",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Ordin nr. 3.934 din 18 mai 2026",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "În ce Monitor Oficial a fost publicat Profilul profesional al managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Monitorul Oficial nr. 469 din 4 iunie 2026"
+    },
+    {
+     "id": "b",
+     "text": "Monitorul Oficial nr. 552 bis din 6 iulie 2026"
+    },
+    {
+     "id": "c",
+     "text": "Monitorul Oficial nr. 664 din 11 august 2026"
+    },
+    {
+     "id": "d",
+     "text": "Monitorul Oficial nr. 795 din 12 august 2024"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "OMEC nr. 3.934 din 18 mai 2026 a fost publicat în Monitorul Oficial nr. 469 din 4 iunie 2026. Celelalte variante corespund altor acte din aceeași bibliografie: MO 552 bis/6 iulie 2026 — Metodologia (OMEC 4.155/2026); MO 664/11 august 2026 — Calendarul și bibliografia (OMEC 4.622/2026); MO 795/12 august 2024 — Regulamentul-cadru (OMEC 5.726/2024)."
+  },
+  {
+   "id": "q038",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. I, art. 1 alin. (1)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Conform art. 1 alin. (1), în ce limbi se desfășoară învățământul preuniversitar din România?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Exclusiv în limba română"
+    },
+    {
+     "id": "b",
+     "text": "În limba română și în limbile minorităților naționale"
+    },
+    {
+     "id": "c",
+     "text": "În limba română, în limbile minorităților naționale, în limba semnelor române și în limbi de circulație internațională"
+    },
+    {
+     "id": "d",
+     "text": "În limba română și în limbi de circulație internațională"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 1 alin. (1) enumeră patru categorii: limba română, limbile minorităților naționale, limba semnelor române și limbile de circulație internațională. Includerea explicită a limbii semnelor române este elementul cel mai des omis."
+  },
+  {
+   "id": "q039",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. I, art. 1 alin. (1)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Ce statut are învățământul preuniversitar potrivit art. 1 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Constituie prioritate națională și este domeniu de interes public"
+    },
+    {
+     "id": "b",
+     "text": "Este serviciu public de interes local"
+    },
+    {
+     "id": "c",
+     "text": "Este activitate economică de interes general"
+    },
+    {
+     "id": "d",
+     "text": "Este domeniu de interes strategic în subordinea autorităților locale"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 1 alin. (1) prevede că „învățământul preuniversitar constituie prioritate națională, este domeniu de interes public\". Formularea este esențială pentru că fundamentează întregul regim juridic al finanțării și organizării sistemului."
+  },
+  {
+   "id": "q040",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. I, art. 1 alin. (3)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "În ce constă idealul educațional al școlii românești, potrivit art. 1 alin. (3)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "În pregătirea elevilor pentru examenele naționale"
+    },
+    {
+     "id": "b",
+     "text": "În dezvoltarea liberă, integrală și armonioasă a individualității umane, în formarea personalității autonome și în asumarea unui sistem de valori"
+    },
+    {
+     "id": "c",
+     "text": "În formarea forței de muncă necesare economiei naționale"
+    },
+    {
+     "id": "d",
+     "text": "În transmiterea valorilor culturale ale poporului român"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 1 alin. (3) definește idealul educațional ca „dezvoltarea liberă, integrală și armonioasă a individualității umane, în formarea personalității autonome și în asumarea unui sistem de valori care sunt necesare pentru împlinirea și dezvoltarea personală, pentru dezvoltarea spiritului antreprenorial, pentru participarea cetățenească activă în societate, pentru incluziune socială și pentru angajare pe piața muncii\". Angajarea pe piața muncii este doar una dintre finalități, nu idealul în sine."
+  },
+  {
+   "id": "q041",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. I, art. 3",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cărui principiu îi corespunde „redistribuirea autorității decizionale de la nivelurile centrale către cele locale, pentru a răspunde adecvat nevoilor beneficiarilor\"?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Principiul eficienței"
+    },
+    {
+     "id": "b",
+     "text": "Principiul relevanței"
+    },
+    {
+     "id": "c",
+     "text": "Principiul descentralizării decizionale"
+    },
+    {
+     "id": "d",
+     "text": "Principiul echității și egalității de șanse"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 3 lit. e) definește principiul descentralizării decizionale exact în acești termeni. Principiul eficienței (lit. d) vizează obținerea rezultatelor preconizate prin gestionarea resurselor existente, iar principiul relevanței (lit. c) o ofertă educațională corelată cu nevoile elevilor și cerințele pieței muncii."
+  },
+  {
+   "id": "q042",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. I, art. 3 lit. a)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce include expres principiul nediscriminării, potrivit art. 3 lit. a)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Interzicerea segregării școlare"
+    },
+    {
+     "id": "b",
+     "text": "Obligativitatea învățământului gratuit până la 18 ani"
+    },
+    {
+     "id": "c",
+     "text": "Dreptul la educație în limba maternă"
+    },
+    {
+     "id": "d",
+     "text": "Asigurarea transportului școlar gratuit"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 3 lit. a) prevede că accesul și participarea la educația de calitate se realizează fără discriminare, „inclusiv prin interzicerea segregării școlare\". Interdicția segregării este așadar o componentă a principiului nediscriminării, nu un principiu separat. Celelalte variante sunt drepturi reale, dar reglementate în alte texte ale legii."
+  },
+  {
+   "id": "q043",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 194 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Pe ce bază se realizează recrutarea, încadrarea, formarea și evaluarea persoanelor care realizează managementul unităților de învățământ?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pe baza regulamentului intern al fiecărei unități"
+    },
+    {
+     "id": "b",
+     "text": "Pe baza standardelor profesionale care formează profilul profesional al managerului școlar, aprobate prin ordin al ministrului educației"
+    },
+    {
+     "id": "c",
+     "text": "Pe baza criteriilor stabilite anual de consiliul de administrație al inspectoratului"
+    },
+    {
+     "id": "d",
+     "text": "Pe baza standardelor ARACIIP"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 194 alin. (1) stabilește această bază legală, iar profilul respectiv a fost aprobat prin OMEC nr. 3.934/2026. Această legătură explică de ce Profilul figurează în bibliografia concursului: el este instrumentul prin care legea operaționalizează recrutarea și evaluarea directorilor."
+  },
+  {
+   "id": "q044",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 194 alin. (4)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Când are directorul obligația de a urma programul de formare profesională în management școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Înainte de a se înscrie la concurs"
+    },
+    {
+     "id": "b",
+     "text": "În primul an al fiecărui mandat de management"
+    },
+    {
+     "id": "c",
+     "text": "O singură dată, în primul an al primului mandat"
+    },
+    {
+     "id": "d",
+     "text": "În ultimul an al mandatului, ca o condiție de reînnoire"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 194 alin. (4) prevede obligația de a urma programul „în primul an al FIECĂRUI mandat de management\", nu doar la primul mandat. Programul reprezintă totodată criteriu de evaluare a activității manageriale. Capcana este varianta c): consilierea de către un mentor, reglementată la alin. (6), este cea care se aplică doar la PRIMUL mandat."
+  },
+  {
+   "id": "q045",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 194 alin. (6)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Cine beneficiază de consiliere din partea unui mentor pentru management educațional?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Toți directorii, pe întreaga durată a mandatului"
+    },
+    {
+     "id": "b",
+     "text": "Directorul și directorul adjunct care exercită primul mandat de management educațional"
+    },
+    {
+     "id": "c",
+     "text": "Numai directorii unităților cu rezultate slabe la evaluările naționale"
+    },
+    {
+     "id": "d",
+     "text": "Numai directorii adjuncți"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 194 alin. (6): directorul și directorul adjunct care exercită PRIMUL mandat de management educațional sunt consiliați în activitate de un mentor pentru management educațional. Mentorii formează Corpul Managerilor Educaționali, înființat prin alin. (7)."
+  },
+  {
+   "id": "q046",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 194 alin. (7)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce este Corpul Managerilor Educaționali?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Un sindicat al directorilor de unități de învățământ"
+    },
+    {
+     "id": "b",
+     "text": "Un organism de specialitate aflat în coordonarea Ministerului Educației, format din mentorii pentru management educațional"
+    },
+    {
+     "id": "c",
+     "text": "O structură din cadrul fiecărui inspectorat școlar județean"
+    },
+    {
+     "id": "d",
+     "text": "Comisia națională de monitorizare a concursului de directori"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 194 alin. (7) înființează Corpul Managerilor Educaționali ca organism de specialitate în coordonarea Ministerului Educației, format din mentorii pentru management educațional. Scopul: dezvoltarea politicilor publice din educație, mentoratul directorilor aflați la început de carieră și monitorizarea respectării principiilor etice în managementul școlar."
+  },
+  {
+   "id": "q047",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 194 alin. (9)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Funcțiile de conducere, de îndrumare și control din învățământul preuniversitar sunt funcții publice în sensul OUG nr. 57/2019?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Da, toate sunt funcții publice"
+    },
+    {
+     "id": "b",
+     "text": "Nu sunt funcții publice prevăzute de OUG nr. 57/2019"
+    },
+    {
+     "id": "c",
+     "text": "Doar funcțiile de la nivelul ministerului sunt funcții publice"
+    },
+    {
+     "id": "d",
+     "text": "Doar funcțiile de inspector școlar sunt funcții publice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 194 alin. (9) prevede expres că funcțiile de conducere, îndrumare și control și funcțiile de la nivelul DJIP/DMBIP, CNFDCD, CCD, ARACIIP, al birourilor județene ale acesteia și al CJRAE/CMBRAE NU sunt funcții publice prevăzute de OUG nr. 57/2019. Consecința practică: raporturile acestor persoane sunt de muncă, nu de serviciu, cu regim juridic diferit."
+  },
+  {
+   "id": "q048",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 195 alin. (1)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Cine exercită conducerea executivă a unității de învățământ?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Consiliul de administrație"
+    },
+    {
+     "id": "b",
+     "text": "Directorul"
+    },
+    {
+     "id": "c",
+     "text": "Consiliul profesoral"
+    },
+    {
+     "id": "d",
+     "text": "Inspectorul școlar general"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 195 alin. (1) este categoric: „Directorul exercită conducerea executivă a unității de învățământ\". Art. 195 alin. (2) lit. a) adaugă faptul că directorul este reprezentantul legal al unității. Consiliul de administrație are rol de decizie în domeniile de competență proprii, dar nu exercită conducerea executivă."
+  },
+  {
+   "id": "q049",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 195 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Într-o unitate de învățământ cu SECȚII de predare în limba unei minorități naționale, cine are obligația cunoașterii limbii respective?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Toți membrii echipei de conducere"
+    },
+    {
+     "id": "b",
+     "text": "Unul dintre directori"
+    },
+    {
+     "id": "c",
+     "text": "Directorul, în mod obligatoriu"
+    },
+    {
+     "id": "d",
+     "text": "Niciunul; obligația revine doar cadrelor didactice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 195 alin. (1) face o distincție fină: la unitățile cu predare INTEGRALĂ în limbile minorităților, DIRECTORUL are obligația cunoașterii limbii; la unitățile cu SECȚII de predare în limbile minorităților sau cu studiul limbii minorității, obligația revine UNUIA DINTRE directori. Confuzia între cele două ipoteze este exact capcana. În ambele cazuri, numirea se face cu consultarea organizației care reprezintă minoritatea în Parlament sau a Grupului parlamentar al minorităților naționale."
+  },
+  {
+   "id": "q050",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 194 alin. (2) lit. d)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Care sunt funcțiile de conducere de la nivelul unității de învățământ preuniversitar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Director general și director general adjunct"
+    },
+    {
+     "id": "b",
+     "text": "Director și director adjunct"
+    },
+    {
+     "id": "c",
+     "text": "Director, director adjunct și inspector școlar"
+    },
+    {
+     "id": "d",
+     "text": "Director și administrator de patrimoniu"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 194 alin. (2) lit. d) prevede pentru nivelul unității de învățământ/unității de educație extrașcolară funcțiile de director și director adjunct. Director general și director general adjunct sunt funcțiile de la nivelul DJIP/DMBIP (lit. a), iar inspectorul școlar este funcție de îndrumare și control (lit. c) — deci la alt nivel. Administratorul de patrimoniu este personal didactic auxiliar (art. 192)."
+  },
+  {
+   "id": "q051",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. X, art. 192 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Care dintre următoarele funcții face parte din personalul didactic AUXILIAR?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Director adjunct"
+    },
+    {
+     "id": "b",
+     "text": "Inspector școlar"
+    },
+    {
+     "id": "c",
+     "text": "Mediator școlar"
+    },
+    {
+     "id": "d",
+     "text": "Profesor pentru învățământ primar"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 192 alin. (1) enumeră personalul didactic auxiliar: bibliotecar, documentarist, redactor, informatician, analist programator, laborant, tehnician, pedagog școlar, instructor de educație extrașcolară, asistent social, corepetitor, mediator școlar, secretar, administrator financiar (contabil), instructor-animator, administrator de patrimoniu, referent. Directorul adjunct și inspectorul școlar sunt funcții didactice de conducere, respectiv de îndrumare și control (art. 194)."
+  },
+  {
+   "id": "q052",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. X, art. 192 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Care dintre următoarele NU figurează în lista personalului didactic auxiliar de la art. 192?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Administrator de patrimoniu"
+    },
+    {
+     "id": "b",
+     "text": "Corepetitor"
+    },
+    {
+     "id": "c",
+     "text": "Consilier școlar"
+    },
+    {
+     "id": "d",
+     "text": "Instructor-animator"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Lista de la art. 192 alin. (1) include administratorul de patrimoniu, corepetitorul și instructorul-animator, dar nu și consilierul școlar — acesta are statut de personal didactic și activează în cadrul CJRAE/CMBRAE și al cabinetelor de asistență psihopedagogică, reglementat separat."
+  },
+  {
+   "id": "q053",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XIV, art. 210 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care este prima sancțiune disciplinară, în ordinea gravității, care se poate aplica personalului didactic de predare?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Avertismentul scris"
+    },
+    {
+     "id": "b",
+     "text": "Reducerea salariului de bază cu până la 15%"
+    },
+    {
+     "id": "c",
+     "text": "Suspendarea dreptului de a se înscrie la concursuri"
+    },
+    {
+     "id": "d",
+     "text": "Desfacerea disciplinară a contractului de muncă"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 210 alin. (1) enumeră sancțiunile în raport cu gravitatea abaterilor, începând cu lit. a) avertismentul scris, urmat de lit. b) reducerea salariului de bază, cumulat, când este cazul, cu indemnizația de conducere, de îndrumare și control, cu până la 15%, pe o perioadă de 1-6 luni, apoi lit. c) suspendarea etc."
+  },
+  {
+   "id": "q054",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XIV, art. 210 alin. (1) lit. b)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este cuantumul maxim și durata reducerii salariului de bază, ca sancțiune disciplinară?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Până la 10%, pe o perioadă de 1-3 luni"
+    },
+    {
+     "id": "b",
+     "text": "Până la 15%, pe o perioadă de 1-6 luni"
+    },
+    {
+     "id": "c",
+     "text": "Până la 25%, pe o perioadă de 1-6 luni"
+    },
+    {
+     "id": "d",
+     "text": "Până la 15%, pe o perioadă de 3-12 luni"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 210 alin. (1) lit. b) prevede reducerea salariului de bază, cumulat — când este cazul — cu indemnizația de conducere, de îndrumare și control, cu până la 15%, pe o perioadă de 1-6 luni. Atât procentul, cât și intervalul sunt ușor de confundat cu cele din Codul muncii pentru alte categorii de salariați."
+  },
+  {
+   "id": "q055",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XIII, art. 207",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este situația actuală a art. 207 din capitolul XIII al Titlului III?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Este în vigoare în forma inițială din 2023"
+    },
+    {
+     "id": "b",
+     "text": "A fost modificat prin OUG nr. 95/2024"
+    },
+    {
+     "id": "c",
+     "text": "A fost abrogat prin Legea nr. 141/2025"
+    },
+    {
+     "id": "d",
+     "text": "A fost suspendat până în anul școlar 2026-2027"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 207, Capitolul XIII, Titlul III a fost ABROGAT prin pct. 10 al art. LIII din Legea nr. 141 din 25 iulie 2025, publicată în Monitorul Oficial nr. 699 din 25 iulie 2025. Este o capcană importantă: bibliografia trimite la capitolul XIII, dar din el a rămas aplicabil practic doar art. 208 (norma didactică). Varianta d) descrie o altă situație reală din lege — prorogarea art. 190 alin. (6) și art. 229 alin. (14) până la începutul anului școlar 2026-2027 — care nu privește art. 207."
+  },
+  {
+   "id": "q056",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XIII, art. 208 alin. (1)",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "Ce număr minim de credite transferabile trebuie să aibă modulul care atestă competențe de predare a unei noi discipline, pentru a fi luat în calcul la norma didactică?",
+   "options": [
+    {
+     "id": "a",
+     "text": "30 de credite"
+    },
+    {
+     "id": "b",
+     "text": "60 de credite"
+    },
+    {
+     "id": "c",
+     "text": "90 de credite"
+    },
+    {
+     "id": "d",
+     "text": "120 de credite"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 208 alin. (1) prevede că norma didactică cuprinde ore la disciplinele corespunzătoare specializării sau specializărilor înscrise pe diploma de licență ori pe certificatul de absolvire a unui modul de minimum 90 de credite transferabile care atestă obținerea de competențe de predare a unei noi discipline."
+  },
+  {
+   "id": "q057",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XVI, art. 219 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Din ce izvoare decurg drepturile și obligațiile personalului din învățământul preuniversitar, potrivit art. 219 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Exclusiv din contractul individual de muncă"
+    },
+    {
+     "id": "b",
+     "text": "Din legislația în vigoare, din lege, din regulamente specifice, precum și din contractul individual și cel colectiv de muncă aplicabil"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv din Legea nr. 198/2023"
+    },
+    {
+     "id": "d",
+     "text": "Din regulamentul intern al unității și din fișa postului"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 219 alin. (1) enumeră toate aceste izvoare cumulativ. Enumerarea contează practic: directorul nu poate invoca doar regulamentul intern pentru a restrânge drepturi prevăzute în contractul colectiv de muncă aplicabil sau în lege."
+  },
+  {
+   "id": "q058",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XVI, art. 219 alin. (2)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "De ce beneficiază personalul din învățământul preuniversitar potrivit art. 219 alin. (2)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "De asistență medicală gratuită pentru examinările medicale periodice prevăzute de legislația în vigoare"
+    },
+    {
+     "id": "b",
+     "text": "De asigurare privată de sănătate suportată integral de angajator"
+    },
+    {
+     "id": "c",
+     "text": "De concediu medical nelimitat"
+    },
+    {
+     "id": "d",
+     "text": "De decontarea integrală a tratamentelor stomatologice"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 219 alin. (2) prevede că personalul beneficiază de asistență medicală gratuită pentru examinările medicale periodice prevăzute de legislația în vigoare. Este un drept concret și delimitat, nu o acoperire medicală generală."
+  },
+  {
+   "id": "q059",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. IX, art. 190",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "Ce prevede legea pentru personalul didactic titular care a dobândit titlul de profesor emerit?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Are prioritate la ocuparea unui post sau a unei catedre"
+    },
+    {
+     "id": "b",
+     "text": "Beneficiază de pensionare anticipată fără penalizare"
+    },
+    {
+     "id": "c",
+     "text": "Este scutit de evaluarea anuală"
+    },
+    {
+     "id": "d",
+     "text": "Devine automat membru al consiliului de administrație"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 190 prevede că personalul didactic titular care a dobândit titlul de profesor emerit are prioritate la ocuparea unui post/unei catedre. De reținut că alin. (6) al aceluiași articol, împreună cu art. 229 alin. (14), a fost prorogat până la începutul anului școlar 2026-2027 prin art. XLIII alin. (1) lit. g) din Legea nr. 141/2025."
+  },
+  {
+   "id": "q060",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Importanța leadershipului și a managementului educațional",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care sunt cele trei dimensiuni pe care Bush le folosește ca bază pentru o definiție funcțională a leadershipului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Influență, valori și viziune"
+    },
+    {
+     "id": "b",
+     "text": "Autoritate, control și evaluare"
+    },
+    {
+     "id": "c",
+     "text": "Planificare, organizare și coordonare"
+    },
+    {
+     "id": "d",
+     "text": "Competență, carismă și rezultate"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Bush structurează capitolul 1 în jurul a trei dimensiuni ale leadershipului — influența, valorile și viziunea — pe care le folosește pentru a construi o definiție funcțională. Varianta c) enumeră funcții clasice ale MANAGEMENTULUI, tocmai distincția pe care capitolul o problematizează."
+  },
+  {
+   "id": "q061",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Leadershipul ca influență",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cum este caracterizat leadershipul ca proces de influență, în definiția reținută de Bush?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Un proces spontan, lipsit de intenționalitate"
+    },
+    {
+     "id": "b",
+     "text": "Un proces de influență socială cu o dimensiune intenționată, exercitat de un individ sau grup asupra altor indivizi sau grupuri, pentru a structura activitățile și relațiile"
+    },
+    {
+     "id": "c",
+     "text": "Un proces exercitat exclusiv de persoane aflate în poziții formale de autoritate"
+    },
+    {
+     "id": "d",
+     "text": "Un proces de transmitere a deciziilor ierarhice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Bush reține ipoteza că leadershipul implică „un proces de influență socială incluzând o dimensiune intenționată exercitată de un singur individ [sau de un grup] asupra altor indivizi [sau grupuri] cu scopul de a structura activitățile și relațiile\". Detaliile care contează: influența este INTENȚIONATĂ și poate proveni de la un grup, nu doar de la un individ, și nu presupune obligatoriu o poziție formală."
+  },
+  {
+   "id": "q062",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Leadershipul și valorile",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "De ce consideră Bush că noțiunea de „influență\" este insuficientă pentru a defini leadershipul?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pentru că influența nu poate fi măsurată empiric"
+    },
+    {
+     "id": "b",
+     "text": "Pentru că influența este neutră — nu explică și nu recomandă scopurile sau acțiunile care ar trebui avute în vedere"
+    },
+    {
+     "id": "c",
+     "text": "Pentru că influența se exercită doar pe verticală, ierarhic"
+    },
+    {
+     "id": "d",
+     "text": "Pentru că influența aparține managementului, nu leadershipului"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Bush arată explicit că „noțiunea de «influență» este neutră prin faptul că nici nu explică, nici nu recomandă scopurile sau acțiunile ce ar trebui avute în vedere\". Tocmai acest deficit justifică adăugarea dimensiunii valorilor: se așteaptă ca liderii să-și fundamenteze acțiunile pe valori personale și profesionale clare. Greenfield și Ribbins (1993) susțin că leadershipul începe cu „caracterul\" liderilor."
+  },
+  {
+   "id": "q063",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Importanța leadershipului și a managementului educațional",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Citatul „Managementul nu are scopuri și valori supraordonate proprii. Aspirația spre eficiență poate fi misiunea managementului, dar aceasta se manifestă în realizarea obiectivelor definite de alții\" aparține:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Lui Greenfield și Ribbins (1993)"
+    },
+    {
+     "id": "b",
+     "text": "Lui Newman și Clarke (1994)"
+    },
+    {
+     "id": "c",
+     "text": "Lui Gunter (1997)"
+    },
+    {
+     "id": "d",
+     "text": "Lui Hattie (2012)"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Citatul este atribuit de Bush lui Newman și Clarke (1994: 29). Greenfield și Ribbins (1993) sunt citați în legătură cu ideea că leadershipul începe cu „caracterul\" liderilor, iar Gunter (1997) apare într-o trimitere alăturată privind managementul educației. Argumentul lui Newman și Clarke este important pentru că susține distincția dintre management — orientat spre eficiență în realizarea unor scopuri stabilite de alții — și leadership, asociat cu valori și scopuri proprii."
+  },
+  {
+   "id": "q064",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Leadershipul instruirii",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "De ce tratează Bush leadershipul instruirii în capitolul 1, și nu alături de celelalte modele de leadership?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pentru că este cel mai important model de leadership educațional"
+    },
+    {
+     "id": "b",
+     "text": "Pentru că are în vedere direcția influenței, în detrimentul naturii și sursei acesteia, deci nu face obiectul volumului"
+    },
+    {
+     "id": "c",
+     "text": "Pentru că este singurul model validat empiric"
+    },
+    {
+     "id": "d",
+     "text": "Pentru că a fost abandonat de literatura de specialitate"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Bush explică: „leadershipul instruirii nu face obiectul acestui volum, deoarece are în vedere direcția influenței, în detrimentul naturii și sursei acesteia, astfel încât subiectul va fi abordat aici\". Criteriul de selecție al volumului este așadar natura și sursa influenței, nu direcția ei. Celelalte modele urmează să fie prezentate în capitolul 2."
+  },
+  {
+   "id": "q065",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Importanța leadershipului și a managementului educațional",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce tendință internațională identifică Bush ca influențând rolul conducerii școlare?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Tendința spre management descentralizat"
+    },
+    {
+     "id": "b",
+     "text": "Tendința spre recentralizarea deciziei la nivel ministerial"
+    },
+    {
+     "id": "c",
+     "text": "Tendința spre desființarea funcțiilor de conducere"
+    },
+    {
+     "id": "d",
+     "text": "Tendința spremanagement privat al școlilor publice"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Capitolul 1 discută tendința internațională spre management descentralizat, care sporește autonomia și, implicit, responsabilitatea conducerii școlare. Această tendință explică de ce leadershipul școlar a devenit un domeniu de studiu distinct."
+  },
+  {
+   "id": "q066",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Importanța leadershipului și a managementului educațional",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Potrivit capitolului 1, cum a evoluat denumirea domeniului de studiu al conducerii școlare?",
+   "options": [
+    {
+     "id": "a",
+     "text": "De la „leadership\" la „administrație\""
+    },
+    {
+     "id": "b",
+     "text": "De la „administrație\" spre „management\" și apoi „leadership\""
+    },
+    {
+     "id": "c",
+     "text": "De la „management\" la „supervizare\""
+    },
+    {
+     "id": "d",
+     "text": "Denumirea a rămas neschimbată de la începutul secolului XX"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Capitolul descrie evoluția terminologică dinspre „administrație\" spre „management\" și ulterior spre „leadership\", evoluție care reflectă o schimbare de accent: de la executarea procedurilor la conducerea orientată spre scopuri și valori. Bush avertizează însă asupra riscului dihotomiei simpliste între un „leadership\" valorizat și un „management\" devalorizat."
+  },
+  {
+   "id": "q067",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Leadershipul și valorile",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce susțin Greenfield și Ribbins (1993) despre punctul de plecare al leadershipului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Că leadershipul începe cu structura organizațională"
+    },
+    {
+     "id": "b",
+     "text": "Că leadershipul începe cu „caracterul\" liderilor"
+    },
+    {
+     "id": "c",
+     "text": "Că leadershipul începe cu rezultatele măsurabile ale elevilor"
+    },
+    {
+     "id": "d",
+     "text": "Că leadershipul începe cu delegarea autorității"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Bush îi citează pe Greenfield și Ribbins (1993) pentru teza că leadershipul începe cu „caracterul\" liderilor. Această poziție susține dimensiunea valorică a leadershipului: se așteaptă ca liderii să-și fundamenteze acțiunile pe valori personale și profesionale clare."
+  },
+  {
+   "id": "q068",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Structurile mentale ale profesorilor, directorilor și sistemelor școlare",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care este prima concepție (structură mentală) enunțată de Hattie în capitolul 9?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Profesorii/liderii cred că sarcina lor fundamentală este să evalueze efectele predării lor asupra învățării și progreselor elevilor"
+    },
+    {
+     "id": "b",
+     "text": "Profesorii/liderii vor să vorbească mai mult despre învățare decât despre predare"
+    },
+    {
+     "id": "c",
+     "text": "Profesorii/liderii se angajează în dialog, nu în monolog"
+    },
+    {
+     "id": "d",
+     "text": "Profesorii/liderii îi informează pe toți cu privire la limbajul învățării"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Concepția 1 formulează ideea centrală a întregii lucrări: sarcina fundamentală a profesorilor și liderilor este evaluarea efectelor propriei predări asupra învățării și progreselor elevilor. Celelalte variante sunt tot concepții autentice din capitol — Concepția 3, 5 și respectiv 8 — ceea ce face întrebarea una de ordonare, nu doar de recunoaștere."
+  },
+  {
+   "id": "q069",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Structurile mentale",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Câte concepții (structuri mentale) sunt prezentate în capitolul 9?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cinci"
+    },
+    {
+     "id": "b",
+     "text": "Șase"
+    },
+    {
+     "id": "c",
+     "text": "Opt"
+    },
+    {
+     "id": "d",
+     "text": "Zece"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Capitolul 9 prezintă opt concepții, de la Concepția 1 (evaluarea efectelor propriei predări) până la Concepția 8 (informarea tuturor cu privire la limbajul învățării)."
+  },
+  {
+   "id": "q070",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Structurile mentale",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce prag al mărimii efectului cere Hattie pentru progresul anual al elevilor?",
+   "options": [
+    {
+     "id": "a",
+     "text": "d > 0,20"
+    },
+    {
+     "id": "b",
+     "text": "d > 0,40"
+    },
+    {
+     "id": "c",
+     "text": "d > 0,60"
+    },
+    {
+     "id": "d",
+     "text": "d > 1,00"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Recomandarea din capitol este explicită: „Asigură-te că toți elevii se dezvoltă la un prag de cel puțin d = >0,40 în fiecare an în această școală la nivel de învățare semnificativă\". Capcana o reprezintă varianta a): Hattie avertizează chiar că trebuie eliminate practicile care obțin d > 0, dar nu și d > 0,40 — adică un efect pozitiv, dar insuficient, nu este un criteriu de succes."
+  },
+  {
+   "id": "q071",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 2",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Concepția 2 din capitolul 9 afirmă că succesul și eșecul în învățarea elevilor:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Depind în principal de mediul socioeconomic al familiei"
+    },
+    {
+     "id": "b",
+     "text": "Se traduc prin ceea ce profesorii și liderii, ca dascăli sau coordonatori, au făcut"
+    },
+    {
+     "id": "c",
+     "text": "Sunt determinate de capacitatea înnăscută a elevului"
+    },
+    {
+     "id": "d",
+     "text": "Reflectă calitatea manualelor și a resurselor didactice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Concepția 2 plasează responsabilitatea la nivelul acțiunii profesorilor și liderilor. Capitolul critică explicit discursurile de tipul „Totul se trage de la sărăcie și de la mediul de acasă\", pe care le tratează drept moduri de a externaliza responsabilitatea. Varianta a) este exact poziția pe care Hattie o contestă."
+  },
+  {
+   "id": "q072",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 4",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cum trebuie privită evaluarea, potrivit Concepției 4?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ca instrument de ierarhizare a elevilor"
+    },
+    {
+     "id": "b",
+     "text": "Ca feedback despre propriul impact al profesorului sau liderului"
+    },
+    {
+     "id": "c",
+     "text": "Ca obligație administrativă de raportare"
+    },
+    {
+     "id": "d",
+     "text": "Ca mijloc de selecție pentru treapta următoare de învățământ"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Concepția 4 reformulează radical rolul evaluării: profesorii și liderii „văd evaluarea ca un feedback despre propriul impact\". Deplasarea este de la evaluarea elevului la evaluarea efectului predării — evaluarea devine informație despre profesor, nu doar despre elev. Celelalte variante descriu funcții tradiționale ale evaluării, pe care capitolul le consideră insuficiente."
+  },
+  {
+   "id": "q073",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 7 și Anexa A",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Concepția 7 se referă la dezvoltarea relațiilor pozitive. Unde anume?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Exclusiv în sălile de clasă"
+    },
+    {
+     "id": "b",
+     "text": "În sălile de clasă și în cancelarii"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv în relația cu părinții"
+    },
+    {
+     "id": "d",
+     "text": "În relația cu autoritățile locale"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Concepția 7 afirmă că profesorii și liderii „cred că face parte din rolul lor să dezvolte relații pozitive în sălile de clasă ȘI în cancelarii\". Extinderea la cancelarie este esențială: capitolul critică preocuparea exclusivă pentru climatul din sala de clasă, ignorând climatul dintre adulții școlii, care condiționează colaborarea profesională."
+  },
+  {
+   "id": "q074",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Potrivit art. 196 alin. (1), procedura de recrutare și selecție a directorilor cuprinde următoarele etape:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Evaluare de competențe, probă scrisă și interviu"
+    },
+    {
+     "id": "b",
+     "text": "Evaluarea dosarului, probă scrisă și inspecție la clasă"
+    },
+    {
+     "id": "c",
+     "text": "Probă scrisă, probă practică și interviu"
+    },
+    {
+     "id": "d",
+     "text": "Evaluare psihologică, probă scrisă și evaluarea planului managerial"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 196 alin. (1) enumeră: a) evaluare de competențe, realizată de comisia de concurs împreună cu specialiști în psihometrie; b) probă scrisă; c) interviu. Legea stabilește arhitectura în trei etape, iar Metodologia (art. 19) o preia identic. De reținut: la interviu se evaluează atât capacitățile și aptitudinile personale, cât și calitatea planului managerial și a planului de acțiune."
+  },
+  {
+   "id": "q075",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (1) lit. a)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cine realizează evaluarea de competențe, potrivit art. 196 alin. (1) lit. a)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Exclusiv comisia de concurs"
+    },
+    {
+     "id": "b",
+     "text": "Comisia de concurs împreună cu specialiști în psihometrie"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv specialiști în psihometrie desemnați de minister"
+    },
+    {
+     "id": "d",
+     "text": "Consiliul de administrație al unității de învățământ"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Legea prevede că evaluarea se realizează de comisia de concurs ÎMPREUNĂ cu specialiști în psihometrie. Prezența psihometricienilor nu este opțională. Detaliul se leagă de art. 21 din Metodologie, unde elaborarea testelor standardizate implică tot specialiști în psihometrie, alături de experți în științele educației."
+  },
+  {
+   "id": "q076",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (4)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Pentru ce perioadă sunt numite persoanele care au câștigat concursul pentru funcția de director?",
+   "options": [
+    {
+     "id": "a",
+     "text": "2 ani"
+    },
+    {
+     "id": "b",
+     "text": "3 ani"
+    },
+    {
+     "id": "c",
+     "text": "4 ani"
+    },
+    {
+     "id": "d",
+     "text": "5 ani"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 196 alin. (4) stabilește durata mandatului la 4 ani. Aceeași durată apare și în art. 32 alin. (1) din Metodologie, atât pentru decizia de numire, cât și pentru contractul de management educațional. Durata de 5 ani corespunde vechimii minime cerute la înscriere, nu mandatului — o confuzie frecventă."
+  },
+  {
+   "id": "q077",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (4)-(5)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Câte contracte de management încheie directorul unei unități de învățământ de stat și cu cine?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Unul singur, de management educațional, cu directorul general al DJIP/DMBIP"
+    },
+    {
+     "id": "b",
+     "text": "Două: unul de management educațional cu directorul general al DJIP/DMBIP și unul de management administrativ-financiar cu primarul"
+    },
+    {
+     "id": "c",
+     "text": "Unul singur, cu consiliul de administrație al unității"
+    },
+    {
+     "id": "d",
+     "text": "Două: unul cu primarul și unul cu consiliul local"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Sunt DOUĂ contracte distincte. Art. 196 alin. (4): contractul de management educațional se încheie cu directorul general al DJIP/DMBIP. Art. 196 alin. (5): planul de management administrativ-financiar se supune avizării consiliului de administrație al unității și apoi aprobării primarului, iar contractul de management administrativ-financiar se încheie cu primarul. Dualitatea reflectă dubla subordonare a școlii: pedagogic față de structura de învățământ, administrativ-financiar față de autoritatea locală."
+  },
+  {
+   "id": "q078",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (5)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Ce parcurs urmează planul de management administrativ-financiar înainte de încheierea contractului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Este aprobat direct de primar"
+    },
+    {
+     "id": "b",
+     "text": "Este avizat de consiliul de administrație al unității, apoi aprobat de primar"
+    },
+    {
+     "id": "c",
+     "text": "Este avizat de consiliul profesoral, apoi aprobat de consiliul local"
+    },
+    {
+     "id": "d",
+     "text": "Este aprobat de directorul general al DJIP/DMBIP"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 196 alin. (5) descrie două trepte succesive: mai întâi AVIZAREA de către consiliul de administrație al unității de învățământ, apoi APROBAREA de către primar. Distincția aviz/aprobare contează: avizul este o opinie a organului deliberativ al școlii, aprobarea este actul care condiționează încheierea contractului."
+  },
+  {
+   "id": "q079",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (7)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cine evaluează anual respectarea planului de management administrativ-financiar și cui aparține hotărârea finală privind eliberarea din funcție?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Autoritatea publică locală evaluează și tot ea decide eliberarea din funcție"
+    },
+    {
+     "id": "b",
+     "text": "Autoritatea publică locală evaluează și poate propune eliberarea, dar hotărârea finală aparține DJIP/DMBIP"
+    },
+    {
+     "id": "c",
+     "text": "Consiliul de administrație al unității evaluează, iar primarul decide"
+    },
+    {
+     "id": "d",
+     "text": "Ministerul Educației evaluează și decide"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 196 alin. (7) separă clar competențele: autoritatea publică locală efectuează anual evaluarea și poate PROPUNE consiliului de administrație al DJIP/DMBIP eliberarea din funcție, dar textul adaugă expres „Hotărârea finală aparține DJIP/DMBIP\". Primarul nu poate elibera din funcție directorul, deși este parte în contractul administrativ-financiar."
+  },
+  {
+   "id": "q080",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 197",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce condiție trebuie îndeplinită înainte de încheierea contractului de management educațional?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prezentarea unei evaluări medicale care atestă că persoana este aptă pentru funcția vizată"
+    },
+    {
+     "id": "b",
+     "text": "Absolvirea programului de formare în management școlar"
+    },
+    {
+     "id": "c",
+     "text": "Obținerea avizului consiliului profesoral"
+    },
+    {
+     "id": "d",
+     "text": "Depunerea unei declarații de avere"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 197 prevede că acest contract „poate fi încheiat numai după prezentarea unei evaluări medicale care atestă faptul că persoana este aptă pentru funcția vizată\". Programul de formare în management (art. 194 alin. 4) se urmează ÎN primul an al mandatului, deci după numire, nu înainte de contract."
+  },
+  {
+   "id": "q081",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 198 alin. (2)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Care dintre următorii participă la concurs cu statut de OBSERVATOR, potrivit art. 198 alin. (2)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Reprezentanții mediului economic și de afaceri"
+    },
+    {
+     "id": "b",
+     "text": "Un reprezentant al elevilor desemnat de Consiliul Național al Elevilor"
+    },
+    {
+     "id": "c",
+     "text": "Specialiștii în psihometrie"
+    },
+    {
+     "id": "d",
+     "text": "Directorul general al DJIP/DMBIP"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 198 alin. (2) distinge două categorii. MEMBRI ai comisiei de concurs: reprezentanți ai mediului economic și de afaceri. OBSERVATORI: reprezentanți ai federațiilor sindicale reprezentative, un reprezentant al elevilor desemnat de Consiliul Național al Elevilor și un reprezentant desemnat de federațiile reprezentative ale asociațiilor de părinți. Capcana este varianta a): reprezentanții mediului economic sunt membri cu drepturi depline, nu observatori."
+  },
+  {
+   "id": "q082",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 198 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cine constituie comisia de concurs pentru funcțiile de conducere din Palatul Național al Copiilor?",
+   "options": [
+    {
+     "id": "a",
+     "text": "DJIP/DMBIP pe raza căreia funcționează"
+    },
+    {
+     "id": "b",
+     "text": "Ministerul Educației, prin ordin al ministrului"
+    },
+    {
+     "id": "c",
+     "text": "Consiliul de administrație al Palatului"
+    },
+    {
+     "id": "d",
+     "text": "Consiliul Național al Elevilor"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 198 alin. (1) prevede regula generală — DJIP/DMBIP numește comisia pentru unitățile de învățământ — și o excepție expresă: pentru Palatul Național al Copiilor comisia se constituie la nivelul Ministerului Educației, prin ordin al ministrului. Excepția se justifică prin subordonarea directă a instituției față de minister."
+  },
+  {
+   "id": "q083",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 198 alin. (4)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "În care dintre situațiile de eliberare din funcție a directorului este OBLIGATORIE realizarea unui audit de către DJIP/DMBIP?",
+   "options": [
+    {
+     "id": "a",
+     "text": "La propunerea motivată a directorului general al DJIP/DMBIP"
+    },
+    {
+     "id": "b",
+     "text": "La propunerea motivată a 2/3 dintre membrii consiliului de administrație al unității"
+    },
+    {
+     "id": "c",
+     "text": "La propunerea consiliului profesoral, cu votul secret a 2/3 dintre membri"
+    },
+    {
+     "id": "d",
+     "text": "Pentru încălcarea cu vinovăție a obligațiilor din contractul de management"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 198 alin. (4) lit. c) este singura ipoteză în care legea impune un audit: „În această situație, este obligatorie realizarea unui audit de către DJIP/DMBIP\". Rezultatele auditului se analizează în consiliul de administrație al DJIP/DMBIP, iar decizia de eliberare se emite în funcție de hotărârea acestuia. Capcana constă în confuzia dintre lit. b) — propunerea CA al unității, unde nu se cere audit — și lit. c) — propunerea consiliului profesoral, unde se cere."
+  },
+  {
+   "id": "q084",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 198 alin. (4) lit. c)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce majoritate și ce tip de vot sunt necesare pentru ca propunerea de eliberare din funcție să vină din partea consiliului profesoral?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Majoritate simplă, vot deschis"
+    },
+    {
+     "id": "b",
+     "text": "Votul secret a 2/3 dintre membri"
+    },
+    {
+     "id": "c",
+     "text": "Votul deschis a 2/3 dintre membri"
+    },
+    {
+     "id": "d",
+     "text": "Unanimitate, vot secret"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 198 alin. (4) lit. c) cere expres „votul secret a 2/3 dintre membri\". Prin comparație, lit. b), privind consiliul de administrație al unității, cere tot 2/3 dintre membri, dar fără a impune caracterul secret al votului."
+  },
+  {
+   "id": "q085",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 198 alin. (6)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "În cazul vacantării funcției de director, până când poate dura conducerea interimară?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Până la organizarea concursului, dar nu mai târziu de sfârșitul anului școlar"
+    },
+    {
+     "id": "b",
+     "text": "Cel mult 6 luni, indiferent de organizarea concursului"
+    },
+    {
+     "id": "c",
+     "text": "Până la organizarea concursului, fără alt termen-limită"
+    },
+    {
+     "id": "d",
+     "text": "Cel mult 30 de zile"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 198 alin. (6) prevede o dublă limită: până la organizarea concursului, DAR nu mai târziu de sfârșitul anului școlar. Conducerea interimară este asigurată de un cadru didactic titular, numit prin detașare în interesul învățământului, prin decizia directorului general, cu avizul consiliului de administrație al DJIP/DMBIP și cu ACORDUL SCRIS al persoanei solicitate — acordul scris fiind o condiție ușor de omis."
+  },
+  {
+   "id": "q086",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 31",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Când și de către cine se validează rezultatele concursului, potrivit Metodologiei?",
+   "options": [
+    {
+     "id": "a",
+     "text": "De consiliul de administrație al inspectoratului școlar, după finalizarea soluționării tuturor contestațiilor"
+    },
+    {
+     "id": "b",
+     "text": "De comisia de organizare a concursului, imediat după proba de interviu"
+    },
+    {
+     "id": "c",
+     "text": "De Ministerul Educației și Cercetării, înainte de soluționarea contestațiilor"
+    },
+    {
+     "id": "d",
+     "text": "De consiliul de administrație al unității de învățământ"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 31 prevede validarea de către consiliul de administrație al inspectoratului școlar, DUPĂ finalizarea soluționării tuturor contestațiilor. Rezultatele validate se transmit apoi spre informare direcției generale cu atribuții în managementul învățământului preuniversitar din minister, conform unei machete comunicate de aceasta. Ordinea contează: întâi contestațiile, apoi validarea."
+  },
+  {
+   "id": "q087",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 32 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Potrivit Metodologiei din 2026, prin al cui act se realizează numirea în funcția de director și cu cine se încheie contractul de management educațional?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prin decizie a directorului general al DJIP/DMBIP, contractul fiind încheiat cu acesta"
+    },
+    {
+     "id": "b",
+     "text": "Prin decizie a inspectorului școlar general, contractul fiind încheiat cu acesta"
+    },
+    {
+     "id": "c",
+     "text": "Prin hotărâre a consiliului de administrație al unității, contractul fiind încheiat cu primarul"
+    },
+    {
+     "id": "d",
+     "text": "Prin ordin al ministrului educației și cercetării"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 32 alin. (1) din Metodologie prevede numirea prin decizie a INSPECTORULUI ȘCOLAR GENERAL, în conformitate cu hotărârea consiliului de administrație, pentru 4 ani, iar contractul de management educațional se încheie tot cu inspectorul școlar general. Capcana este reală și importantă: Legea nr. 198/2023 (art. 196 alin. 4 și art. 198 alin. 3) vorbește despre directorul general al DJIP/DMBIP, structuri care nu sunt încă operaționale; metodologia din 2026 aplică procedura prin inspectoratele școlare. La examen contează care act normativ este citat în întrebare."
+  },
+  {
+   "id": "q088",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 34 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Care dintre următoarele NU constituie, potrivit art. 34 alin. (1) din Metodologie, temei de eliberare din funcție a directorului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Propunerea motivată a consiliului de administrație al inspectoratului școlar"
+    },
+    {
+     "id": "b",
+     "text": "Încălcarea cu vinovăție a obligațiilor stabilite prin contractul de management"
+    },
+    {
+     "id": "c",
+     "text": "Propunerea motivată a 2/3 dintre membrii consiliului de administrație al unității"
+    },
+    {
+     "id": "d",
+     "text": "Obținerea calificativului „Bine\" la evaluarea anuală a personalului didactic"
+    }
+   ],
+   "correct_option_id": "d",
+   "explicatie": "Art. 34 alin. (1) enumeră temeiuri procedurale precise: propunerea motivată a CA al inspectoratului, încălcarea cu vinovăție a obligațiilor contractuale (cu respectarea procedurii de cercetare disciplinară prevăzute de Legea nr. 198/2023) și propunerea motivată a 2/3 dintre membrii consiliului de administrație al unității. Un calificativ anual nu este, prin el însuși, temei de eliberare din funcția de conducere."
+  },
+  {
+   "id": "q089",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 33",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Ce act se emite atunci când contractul de management al directorului încetează?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Decizie de încetare a contractului de management, emisă de inspectorul școlar general"
+    },
+    {
+     "id": "b",
+     "text": "Hotărâre a consiliului de administrație al unității"
+    },
+    {
+     "id": "c",
+     "text": "Ordin al ministrului educației și cercetării"
+    },
+    {
+     "id": "d",
+     "text": "Dispoziție a primarului"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 33 prevede că „în toate situațiile în care contractul de management al directorului/directorului adjunct încetează, inspectorul școlar general emite decizie de încetare a contractului de management\". Formula „în toate situațiile\" arată că regula se aplică indiferent de cauza încetării."
+  },
+  {
+   "id": "q090",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Din câți membri poate fi constituit consiliul de administrație al unei unități de învățământ de stat?",
+   "options": [
+    {
+     "id": "a",
+     "text": "5, 7 sau 9 membri"
+    },
+    {
+     "id": "b",
+     "text": "7, 9 sau 11 membri"
+    },
+    {
+     "id": "c",
+     "text": "9, 11 sau 13 membri"
+    },
+    {
+     "id": "d",
+     "text": "Un număr stabilit liber de consiliul profesoral"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Consiliul de administrație este organul deliberativ de conducere al unității și este constituit din 7, 9 sau 11 membri, în funcție de efectivul de beneficiari primari. Numărul este întotdeauna impar, pentru a evita blocajele la vot."
+  },
+  {
+   "id": "q091",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. a)-c)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Unei unități de învățământ cu 350 de beneficiari primari îi corespunde un consiliu de administrație format din:",
+   "options": [
+    {
+     "id": "a",
+     "text": "7 membri, cu cvorum de cel puțin 4"
+    },
+    {
+     "id": "b",
+     "text": "9 membri, cu cvorum de cel puțin 5"
+    },
+    {
+     "id": "c",
+     "text": "11 membri, cu cvorum de cel puțin 6"
+    },
+    {
+     "id": "d",
+     "text": "9 membri, cu cvorum de cel puțin 6"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Pragurile sunt: sub 300 de beneficiari — 7 membri, cvorum minimum 4; între 301 și 400 — 9 membri, cvorum minimum 5; peste 400 — 11 membri, cvorum minimum 6. Un efectiv de 350 se încadrează în intervalul 301-400. Capcana o constituie asocierea greșită dintre numărul de membri și cvorum, cele două crescând în paralel."
+  },
+  {
+   "id": "q092",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. a)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Care este componența consiliului de administrație format din 7 membri?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Directorul, 3 cadre didactice, 2 reprezentanți ai părinților, primarul"
+    },
+    {
+     "id": "b",
+     "text": "Directorul, 2 cadre didactice, 2 reprezentanți ai părinților, primarul sau un reprezentant al primarului, un reprezentant al consiliului local"
+    },
+    {
+     "id": "c",
+     "text": "Directorul, directorul adjunct, 2 cadre didactice, 2 părinți, primarul"
+    },
+    {
+     "id": "d",
+     "text": "Directorul, 2 cadre didactice, 3 reprezentanți ai părinților, primarul"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Formula de 7 membri este: directorul, 2 cadre didactice, 2 reprezentanți ai părinților, primarul sau un reprezentant al primarului și un reprezentant al consiliului local. Se observă echilibrul: 3 din partea școlii, 2 din partea părinților, 2 din partea autorității locale. La 9 și 11 membri crește atât numărul cadrelor didactice, cât și cel al reprezentanților consiliului local și ai părinților."
+  },
+  {
+   "id": "q093",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. b)-c)",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "În consiliile de administrație de 9 sau 11 membri, cine poate ocupa unul dintre locurile repartizate cadrelor didactice?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Un reprezentant al personalului didactic auxiliar"
+    },
+    {
+     "id": "b",
+     "text": "Un reprezentant al personalului nedidactic"
+    },
+    {
+     "id": "c",
+     "text": "Un reprezentant al sindicatului"
+    },
+    {
+     "id": "d",
+     "text": "Directorul adjunct, de drept"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Atât la formula de 9 membri (3 cadre didactice), cât și la cea de 11 membri (4 cadre didactice), legea precizează că „un reprezentant poate fi un reprezentant al personalului didactic auxiliar\". Este o posibilitate, nu o obligație. Personalul nedidactic nu are loc rezervat în consiliul de administrație."
+  },
+  {
+   "id": "q094",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. d)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "În consiliile de administrație ale unităților de nivel liceal/postliceal, reprezentantul elevilor cu drept de vot:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ocupă un loc suplimentar, peste numărul de 7, 9 sau 11 membri"
+    },
+    {
+     "id": "b",
+     "text": "Ocupă un loc din cota aferentă părinților și trebuie să fi împlinit 18 ani"
+    },
+    {
+     "id": "c",
+     "text": "Participă doar cu statut de observator, fără drept de vot"
+    },
+    {
+     "id": "d",
+     "text": "Ocupă un loc din cota aferentă cadrelor didactice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 128 alin. (2) lit. d) prevede că, în unitățile de nivel liceal/postliceal, din cota aferentă PĂRINȚILOR un loc este repartizat, CU DREPT DE VOT, unui reprezentant al elevilor care a împlinit 18 ani. Nu este un loc suplimentar — reduce numărul locurilor părinților. Condiția de vârstă este esențială, fiind legată de capacitatea deplină de exercițiu."
+  },
+  {
+   "id": "q095",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. e)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "În unitățile care școlarizează DOAR nivel postliceal, cui revine cota aferentă părinților în consiliul de administrație?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Rămâne părinților"
+    },
+    {
+     "id": "b",
+     "text": "Revine reprezentanților elevilor"
+    },
+    {
+     "id": "c",
+     "text": "Revine cadrelor didactice"
+    },
+    {
+     "id": "d",
+     "text": "Revine operatorilor economici parteneri"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 128 alin. (2) lit. e) prevede că, în unitățile care școlarizează doar nivel postliceal, cota aferentă părinților revine integral reprezentanților elevilor. Soluția este logică: elevii din învățământul postliceal sunt majori, deci reprezentarea prin părinți nu mai are sens. Se distinge de lit. d), unde doar UN loc din cota părinților trece la elevi."
+  },
+  {
+   "id": "q096",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. f)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "În unitățile care organizează învățământ liceal tehnologic și postliceal, ce prevede legea în privința operatorilor economici parteneri?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pot participa doar ca observatori"
+    },
+    {
+     "id": "b",
+     "text": "Consiliul de administrație se poate mări cu 2 membri desemnați de ei, iar unul dintre aceștia poate fi președinte al consiliului"
+    },
+    {
+     "id": "c",
+     "text": "Pot desemna un singur membru, fără drept de a fi președinte"
+    },
+    {
+     "id": "d",
+     "text": "Nu au niciun rol în consiliul de administrație"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 128 alin. (2) lit. f) permite mărirea consiliului cu 2 membri desemnați de operatorii economici parteneri, asociațiile profesionale sau consorțiile partenere, iar reprezentantul unuia dintre operatorii economici POATE avea calitatea de președinte al consiliului de administrație. Este o excepție notabilă de la regula conducerii de către director, justificată de legătura învățământului tehnologic cu piața muncii."
+  },
+  {
+   "id": "q097",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2) lit. f)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cum este ales președintele consiliului de administrație?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Este de drept directorul unității"
+    },
+    {
+     "id": "b",
+     "text": "Este ales dintre membrii consiliului, cu majoritate simplă a voturilor"
+    },
+    {
+     "id": "c",
+     "text": "Este desemnat de primar"
+    },
+    {
+     "id": "d",
+     "text": "Este numit de inspectorul școlar general"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Legea prevede că „Președintele consiliului de administrație este ales dintre membrii acestuia cu majoritate simplă a voturilor\". Directorul nu este, așadar, președinte de drept — el este membru al consiliului și poate fi ales președinte, dar la fel poate fi ales un alt membru, inclusiv un reprezentant al unui operator economic, în cazul unităților cu învățământ tehnologic."
+  },
+  {
+   "id": "q098",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Care dintre următoarele structuri NU este menționată de lege printre cele cu care conlucrează consiliile de administrație și directorii?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Comisia pentru Evaluarea și Asigurarea Calității (CEAC)"
+    },
+    {
+     "id": "b",
+     "text": "Comisia pentru Formare și Dezvoltare în Cariera Didactică (CFDCD)"
+    },
+    {
+     "id": "c",
+     "text": "Consiliul școlar al elevilor"
+    },
+    {
+     "id": "d",
+     "text": "Corpul Managerilor Educaționali"
+    }
+   ],
+   "correct_option_id": "d",
+   "explicatie": "Art. 128 alin. (1) enumeră: CEAC, CFDCD, consiliul profesoral, autoritățile administrației publice locale, consiliul reprezentativ al părinților și asociațiile de părinți, organizațiile sindicale afiliate federațiilor reprezentative și consiliul școlar al elevilor. Corpul Managerilor Educaționali este o structură reală, înființată prin art. 194 alin. (7), dar are rol de mentorat pentru directori, nu de partener instituțional al consiliului de administrație."
+  },
+  {
+   "id": "q099",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 129 alin. (1)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Cum este compus consiliul profesoral și cine îl prezidează?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Din cadrele didactice titulare, prezidat de un cadru didactic ales"
+    },
+    {
+     "id": "b",
+     "text": "Din totalitatea cadrelor didactice din unitate, prezidat de director"
+    },
+    {
+     "id": "c",
+     "text": "Din cadrele didactice și personalul didactic auxiliar, prezidat de directorul adjunct"
+    },
+    {
+     "id": "d",
+     "text": "Din șefii de catedră, prezidat de director"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 129 alin. (1) prevede că este format din TOTALITATEA cadrelor didactice din unitatea de învățământ și este prezidat de către director. Nu se limitează la titulari și nu include personalul didactic auxiliar."
+  },
+  {
+   "id": "q100",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 129 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cât de des se întrunește consiliul profesoral și la solicitarea cui poate fi convocat?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Semestrial, doar la propunerea directorului"
+    },
+    {
+     "id": "b",
+     "text": "Lunar sau ori de câte ori este nevoie, la propunerea directorului sau la solicitarea a minimum o treime dintre membri"
+    },
+    {
+     "id": "c",
+     "text": "Lunar, exclusiv la convocarea directorului"
+    },
+    {
+     "id": "d",
+     "text": "Trimestrial, la solicitarea majorității membrilor"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 129 alin. (1) stabilește ritmul LUNAR, cu posibilitatea convocării ori de câte ori este nevoie, fie la propunerea directorului, fie la solicitarea a minimum O TREIME dintre membri. Pragul de o treime este important: permite cadrelor didactice să convoace consiliul chiar împotriva voinței directorului."
+  },
+  {
+   "id": "q101",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 129 alin. (2)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care dintre următoarele atribuții aparține consiliului profesoral ca decizie proprie, nu ca simplă propunere către consiliul de administrație?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fișele de evaluare a personalului angajat"
+    },
+    {
+     "id": "b",
+     "text": "Curriculumul la decizia elevului din oferta școlii"
+    },
+    {
+     "id": "c",
+     "text": "Aprobarea sancționării abaterilor disciplinare ale elevilor"
+    },
+    {
+     "id": "d",
+     "text": "Programele de formare și dezvoltare profesională continuă"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 129 alin. (2) folosește verbe diferite, iar distincția este exact miza întrebării. Consiliul profesoral PROPUNE consiliului de administrație fișele de evaluare, măsurile de optimizare, curriculumul la decizia elevului, premierea, programele de formare. În schimb, el APROBĂ sancționarea abaterilor disciplinare ale elevilor (lit. g) și GESTIONEAZĂ calitatea actului didactic (lit. a) — acestea sunt competențe proprii."
+  },
+  {
+   "id": "q102",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 129 alin. (2) lit. b)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce rol are consiliul profesoral în privința Codului de etică profesională?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Îl elaborează integral, fără raportare la un cadru superior"
+    },
+    {
+     "id": "b",
+     "text": "Îl stabilește și monitorizează aplicarea lui, în conformitate cu codul-cadru aprobat prin ordin al ministrului educației"
+    },
+    {
+     "id": "c",
+     "text": "Doar îl aduce la cunoștința cadrelor didactice"
+    },
+    {
+     "id": "d",
+     "text": "Nu are atribuții în această materie"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 129 alin. (2) lit. b) prevede că acest consiliu „stabilește și monitorizează aplicarea Codului de etică profesională elaborat în conformitate cu codul-cadru de etică profesională aprobat prin ordin al ministrului educației\". Autonomia școlii este așadar limitată: codul propriu trebuie să se încadreze în codul-cadru național."
+  },
+  {
+   "id": "q103",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 138 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care sunt componentele finanțării unităților de învățământ preuniversitar de stat, potrivit art. 138 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Finanțarea de bază, finanțarea complementară și finanțarea suplimentară"
+    },
+    {
+     "id": "b",
+     "text": "Finanțarea de bază, finanțarea complementară și finanțarea specială"
+    },
+    {
+     "id": "c",
+     "text": "Finanțarea de bază și finanțarea complementară"
+    },
+    {
+     "id": "d",
+     "text": "Finanțarea de la bugetul de stat și finanțarea de la bugetele locale"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 138 alin. (1) enumeră trei componente: finanțarea de bază, finanțarea complementară și finanțarea SPECIALĂ. Capcana este varianta a): termenul „finanțare suplimentară\" apărea în reglementarea anterioară și este frecvent reținut din obișnuință, dar Legea nr. 198/2023 folosește „finanțare specială\"."
+  },
+  {
+   "id": "q104",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 138 alin. (3)-(4)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Pe ce bază se realizează finanțarea de bază și cum se determină reperul acesteia?",
+   "options": [
+    {
+     "id": "a",
+     "text": "În baza costului standard per elev, determinat pentru fiecare nivel de învățământ, filieră și profil"
+    },
+    {
+     "id": "b",
+     "text": "În baza bugetului solicitat anual de fiecare unitate"
+    },
+    {
+     "id": "c",
+     "text": "În baza suprafeței construite a unității"
+    },
+    {
+     "id": "d",
+     "text": "În baza numărului de cadre didactice încadrate"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 138 alin. (3) prevede că finanțarea de bază se face în baza și în limitele costului standard per elev/preșcolar/antepreșcolar, iar alin. (4) precizează că acest cost se determină pentru fiecare nivel de învățământ, filieră și profil. Mecanismul „finanțarea urmează elevul\" explică de ce numărul de beneficiari este variabila critică pentru bugetul școlii."
+  },
+  {
+   "id": "q105",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 139 alin. (2)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Prin ce buget se asigură cheltuielile cu salariile personalului din învățământul preuniversitar, ca parte a finanțării de bază?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prin bugetele locale, din sume defalcate din unele venituri ale bugetului de stat"
+    },
+    {
+     "id": "b",
+     "text": "Prin bugetul Ministerului Educației"
+    },
+    {
+     "id": "c",
+     "text": "Prin bugetul propriu al unității de învățământ"
+    },
+    {
+     "id": "d",
+     "text": "Prin bugetul consiliului județean"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 139 alin. (2) lit. a) prevede că cheltuielile cu salariile, sporurile, indemnizațiile și contribuțiile aferente se asigură PRIN BUGETUL MINISTERULUI EDUCAȚIEI. Capcana: alte componente ale finanțării de bază — formarea continuă (lit. b) și bunurile și serviciile (lit. c) — se asigură prin bugetele locale, din sume defalcate. Sursa diferă în funcție de categoria de cheltuială, în cadrul aceleiași finanțări de bază."
+  },
+  {
+   "id": "q106",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 139 alin. (2) lit. b)-c)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Cheltuielile cu formarea continuă și cele cu bunuri și servicii se asigură:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prin bugetul Ministerului Educației"
+    },
+    {
+     "id": "b",
+     "text": "Din sume defalcate din unele venituri ale bugetului de stat, prin bugetele locale"
+    },
+    {
+     "id": "c",
+     "text": "Din venituri proprii ale unității de învățământ"
+    },
+    {
+     "id": "d",
+     "text": "Din finanțarea complementară"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 139 alin. (2) lit. b) și c) prevăd ambele categorii ca fiind acoperite din sume defalcate din unele venituri ale bugetului de stat, prin bugetele locale. Ele rămân parte din finanțarea DE BAZĂ, chiar dacă circuitul bugetar trece prin autoritatea locală — de aceea varianta d) este greșită."
+  },
+  {
+   "id": "q107",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 140 alin. (1)-(2)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce acoperă finanțarea complementară și din ce surse se asigură?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cheltuieli de capital, cheltuieli sociale și alte cheltuieli care nu fac parte din finanțarea de bază; din bugetele locale și sume defalcate din bugetul de stat"
+    },
+    {
+     "id": "b",
+     "text": "Salariile personalului didactic; din bugetul Ministerului Educației"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv burse și ajutoare sociale; din venituri proprii"
+    },
+    {
+     "id": "d",
+     "text": "Costul standard per elev; din bugetul de stat"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 140 alin. (1) definește finanțarea complementară ca asigurând cheltuieli de capital, cheltuieli sociale și alte cheltuieli asociate procesului de învățământ care nu fac parte din finanțarea de bază. Alin. (2) precizează sursele: bugetele locale ale unităților administrativ-teritoriale de care aparțin școlile și sume defalcate din unele venituri ale bugetului de stat, aprobate anual prin legea bugetului."
+  },
+  {
+   "id": "q108",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 140 alin. (2)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Care dintre următoarele categorii de cheltuieli intră în finanțarea COMPLEMENTARĂ?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Salariile cadrelor didactice"
+    },
+    {
+     "id": "b",
+     "text": "Investiții, reparații capitale și curente, consolidări"
+    },
+    {
+     "id": "c",
+     "text": "Cheltuielile cu formarea continuă a personalului"
+    },
+    {
+     "id": "d",
+     "text": "Cheltuielile cu bunuri și servicii curente"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 140 alin. (2) lit. a) include investițiile, reparațiile capitale și curente și consolidările în finanțarea complementară, alături de subvențiile pentru internate și cantine (lit. b), cheltuielile pentru evaluarea periodică națională a elevilor (lit. c) și cele pentru examinarea medicală obligatorie periodică a salariaților (lit. d). Salariile, formarea continuă și bunurile și serviciile aparțin finanțării DE BAZĂ, potrivit art. 139."
+  },
+  {
+   "id": "q109",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. X, art. 140 alin. (2) lit. d)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cheltuielile pentru examinarea medicală obligatorie periodică a salariaților din învățământul preuniversitar se suportă:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Din finanțarea de bază"
+    },
+    {
+     "id": "b",
+     "text": "Din finanțarea complementară"
+    },
+    {
+     "id": "c",
+     "text": "De către fiecare salariat"
+    },
+    {
+     "id": "d",
+     "text": "Din fondul de asigurări sociale de sănătate"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 140 alin. (2) lit. d) plasează expres aceste cheltuieli în finanțarea complementară. Corelația utilă: art. 219 alin. (2) garantează personalului asistență medicală gratuită pentru examinările periodice — dreptul este prevăzut în Titlul III, iar sursa de finanțare în Titlul I."
+  },
+  {
+   "id": "q110",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C, domeniul 1",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cărui domeniu de competență îi aparține „managementul schimbării, adaptare și gestionarea presiunilor\"?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Domeniul 1 — Leadership educațional, guvernanță instituțională și orientare strategică"
+    },
+    {
+     "id": "b",
+     "text": "Domeniul 2 — Management operațional administrativ-financiar și conformitate"
+    },
+    {
+     "id": "c",
+     "text": "Domeniul 3 — Managementul calității și evaluare internă"
+    },
+    {
+     "id": "d",
+     "text": "Domeniul 5 — Comunicare, relaționare, parteneriate și colaborare în comunitate"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Competența 1.1 „Managementul schimbării, adaptare și gestionarea presiunilor\" deschide domeniul 1, alături de 1.2 dezvoltare și transformare organizațională, 1.3 leadership incluziv, stare de bine, securitate și siguranță școlară și 1.4 aderarea la principii și valori."
+  },
+  {
+   "id": "q111",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C, domeniul 1",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Unde este plasată în profil competența privind „starea de bine a elevilor și a personalului școlii, securitate și siguranță școlară\"?",
+   "options": [
+    {
+     "id": "a",
+     "text": "În domeniul 2, alături de managementul riscului"
+    },
+    {
+     "id": "b",
+     "text": "În domeniul 1, ca parte a competenței privind leadershipul incluziv"
+    },
+    {
+     "id": "c",
+     "text": "În domeniul 3, la managementul incluziunii"
+    },
+    {
+     "id": "d",
+     "text": "În domeniul 5, la relaționare și gestionarea conflictelor"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Competența 1.3 se numește „Leadership incluziv, stare de bine a elevilor și a personalului școlii, securitate și siguranță școlară\" și aparține domeniului 1. Capcana e reală: profilul conține și competența 2.2 „Reziliență și managementul riscului\" (domeniul 2) și 3.3 „Managementul incluziunii și al diversității în profilurile de învățare\" (domeniul 3), teme învecinate, dar distincte."
+  },
+  {
+   "id": "q112",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C, domeniul 2",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Competența „Conformitate juridică și etică profesională\" aparține domeniului:",
+   "options": [
+    {
+     "id": "a",
+     "text": "1 — Leadership educațional și orientare strategică"
+    },
+    {
+     "id": "b",
+     "text": "2 — Management operațional administrativ-financiar și conformitate"
+    },
+    {
+     "id": "c",
+     "text": "3 — Managementul calității și evaluare internă"
+    },
+    {
+     "id": "d",
+     "text": "4 — Managementul curriculumului"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Competența 2.1 „Conformitate juridică și etică profesională\" deschide domeniul 2, care mai cuprinde 2.2 reziliență și managementul riscului, 2.3 identitate digitală, inovare și eficiență managerială și 2.4 prezentarea și comunicarea informațiilor. Denumirea domeniului conține chiar cuvântul „conformitate\", ceea ce ajută la memorare."
+  },
+  {
+   "id": "q113",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C, domeniul 3",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce competențe specifice cuprinde domeniul 3 — Managementul calității și evaluare internă?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Monitorizare și evaluare internă; responsabilitate publică; managementul incluziunii și diversității; colectarea datelor și strategii de îmbunătățire"
+    },
+    {
+     "id": "b",
+     "text": "Managementul resurselor umane; implementarea curriculumului; cercetare pedagogică; succesul școlar"
+    },
+    {
+     "id": "c",
+     "text": "Conformitate juridică; managementul riscului; identitate digitală; comunicarea informațiilor"
+    },
+    {
+     "id": "d",
+     "text": "Relaționare și conflicte; rețele și proiecte; antreprenoriat educațional; resurse extrabugetare"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Domeniul 3 cuprinde 3.1 monitorizare, evaluare internă și raportare; 3.2 responsabilitate publică și relaționare instituțională; 3.3 managementul incluziunii și al diversității în profilurile de învățare; 3.4 colectarea datelor, analiza și formularea de strategii de îmbunătățire a calității. Variantele b), c) și d) descriu exact domeniile 4, 2 și respectiv 5."
+  },
+  {
+   "id": "q114",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C, domeniul 5",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "„Atragerea de resurse extrabugetare\" este o competență specifică din domeniul:",
+   "options": [
+    {
+     "id": "a",
+     "text": "2 — Management operațional administrativ-financiar și conformitate"
+    },
+    {
+     "id": "b",
+     "text": "5 — Comunicare, relaționare, parteneriate și colaborare în comunitate"
+    },
+    {
+     "id": "c",
+     "text": "1 — Leadership educațional și orientare strategică"
+    },
+    {
+     "id": "d",
+     "text": "3 — Managementul calității și evaluare internă"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Competența 5.4 „Atragerea de resurse extrabugetare\" încheie domeniul 5, alături de 5.1 relaționare, comunicare și gestionarea conflictelor, 5.2 participarea la rețele și proiecte naționale și internaționale și 5.3 antreprenoriat educațional și inovație. Capcana: deși vorbim despre resurse financiare, profilul o plasează la comunicare și parteneriate, nu la managementul administrativ-financiar — pentru că atragerea de fonduri depinde de relația cu comunitatea."
+  },
+  {
+   "id": "q115",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. C",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Câte competențe specifice sunt asociate fiecărui domeniu de competență din profil?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Două"
+    },
+    {
+     "id": "b",
+     "text": "Trei"
+    },
+    {
+     "id": "c",
+     "text": "Patru"
+    },
+    {
+     "id": "d",
+     "text": "Număr variabil, între două și șase"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Fiecare dintre cele cinci domenii are exact patru competențe specifice, numerotate x.1 - x.4, ceea ce dă 20 de competențe specifice în total. Structura simetrică ajută la memorare și la orientarea în grila de evaluare."
+  },
+  {
+   "id": "q116",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul I — Context",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cum descrie profilul impactul directorului asupra rezultatelor elevilor?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Direct asupra rezultatelor elevilor și indirect asupra culturii organizaționale"
+    },
+    {
+     "id": "b",
+     "text": "Direct asupra culturii organizaționale și indirect, dar esențial, asupra calității predării și rezultatelor elevilor"
+    },
+    {
+     "id": "c",
+     "text": "Direct atât asupra culturii, cât și asupra rezultatelor"
+    },
+    {
+     "id": "d",
+     "text": "Fără impact măsurabil asupra rezultatelor elevilor"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Profilul formulează exact invers față de intuiția comună: impactul directorului „este direct asupra culturii organizaționale și indirect, dar esențial, asupra calității predării, echității educaționale și rezultatelor elevilor\". Ideea se corelează cu literatura de specialitate — inclusiv cu Hattie — potrivit căreia liderul școlar acționează asupra învățării prin mediere, nu nemijlocit."
+  },
+  {
+   "id": "q117",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul I — Context",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce nevoie structurală a sistemului educațional urmărește să acopere profilul managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Reducerea numărului de funcții de conducere"
+    },
+    {
+     "id": "b",
+     "text": "Transformarea funcției de conducere dintr-un rol predominant administrativ într-un rol profesionalizat, bazat pe competențe demonstrabile și impact măsurabil"
+    },
+    {
+     "id": "c",
+     "text": "Uniformizarea salarizării directorilor"
+    },
+    {
+     "id": "d",
+     "text": "Creșterea autonomiei financiare a unităților"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Capitolul I formulează explicit această finalitate. Cele două criterii — competențe DEMONSTRABILE și impact MĂSURABIL — explică de ce documentul se încheie cu descriptori comportamentali observabili, la nivelul funcțional."
+  },
+  {
+   "id": "q118",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 3",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce afirmă Concepția 3 din capitolul 9?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Profesorii și liderii vor să vorbească mai mult despre învățare decât despre predare"
+    },
+    {
+     "id": "b",
+     "text": "Profesorii și liderii vor să vorbească mai mult despre predare decât despre învățare"
+    },
+    {
+     "id": "c",
+     "text": "Profesorii și liderii evită discuțiile despre metodele proprii"
+    },
+    {
+     "id": "d",
+     "text": "Profesorii și liderii preferă discuțiile despre curriculum"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Concepția 3 inversează accentul obișnuit din cancelarie: discuția profesională trebuie centrată pe ÎNVĂȚARE — ce și cât au învățat elevii — nu pe predare, adică pe ceea ce a făcut adultul. Varianta b) formulează exact poziția criticată de autor."
+  },
+  {
+   "id": "q119",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 5",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Concepția 5 susține că profesorii și liderii:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Trebuie să transmită cât mai multă informație în timpul disponibil"
+    },
+    {
+     "id": "b",
+     "text": "Se angajează în dialog, nu în monolog"
+    },
+    {
+     "id": "c",
+     "text": "Trebuie să reducă interacțiunea verbală în favoarea lucrului individual"
+    },
+    {
+     "id": "d",
+     "text": "Trebuie să evite dezbaterile contradictorii în clasă"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Concepția 5 este formulată ca „Profesorii/liderii se angajează în dialog, nu în monolog\". Capitolul recunoaște că profesorii trebuie să transmită și informații, dar critică dominația monologului. Legat de aceasta, textul discută și rolul ascultării — un anumit tip de ascultare fiind necesar pentru a înțelege cum și dacă elevii înțeleg."
+  },
+  {
+   "id": "q120",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 6",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce atitudine descrie Concepția 6?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Profesorii și liderii evită situațiile de risc pedagogic"
+    },
+    {
+     "id": "b",
+     "text": "Profesorii și liderii sunt deschiși la provocări și dau „tot ce e mai bun\""
+    },
+    {
+     "id": "c",
+     "text": "Profesorii și liderii se concentrează pe conformarea la proceduri"
+    },
+    {
+     "id": "d",
+     "text": "Profesorii și liderii deleagă provocările către specialiști externi"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Concepția 6 afirmă că profesorii și liderii „sunt deschiși la provocări și dau «tot ce e mai bun»\". Capitolul pornește de la constatarea că viața de zi cu zi la clasă este o provocare permanentă, iar atitudinea față de aceasta — asumare, nu evitare — face diferența de impact."
+  },
+  {
+   "id": "q121",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Concepția 8",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Concepția 8 se referă la:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Informarea tuturor cu privire la limbajul învățării"
+    },
+    {
+     "id": "b",
+     "text": "Informarea părinților despre notele elevilor"
+    },
+    {
+     "id": "c",
+     "text": "Raportarea rezultatelor către inspectorat"
+    },
+    {
+     "id": "d",
+     "text": "Comunicarea publică a rezultatelor la evaluările naționale"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Concepția 8 afirmă că profesorii și liderii „îi informează pe toți cu privire la limbajul învățării\". Este vorba despre un vocabular comun al învățării — împărtășit de profesori, elevi și părinți — nu despre raportarea administrativă a rezultatelor. Capitolul insistă că elevii trebuie să poată vorbi despre cât de bine au învățat, nu doar să primească note."
+  },
+  {
+   "id": "q122",
+   "sursa_document": "Hattie, J., Învățarea vizibilă, Editura Polirom",
+   "sectiune": "Capitolul 9 — Anexa A",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce conține Anexa A a capitolului?",
+   "options": [
+    {
+     "id": "a",
+     "text": "O bibliografie adnotată a studiilor meta-analitice"
+    },
+    {
+     "id": "b",
+     "text": "O listă de control pentru școli, cu afirmații evaluate pe o scală"
+    },
+    {
+     "id": "c",
+     "text": "Tabelul complet al mărimilor de efect pentru toate influențele studiate"
+    },
+    {
+     "id": "d",
+     "text": "Un model de plan managerial"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Anexa A este o listă de control pentru școli, structurată pe teme — predarea motivată și pasionată, profesionalismul, familiarizarea cu curricula, planificarea, desfășurarea lecției și feedbackul — fiecare afirmație fiind evaluată pe o scală. Este instrumentul practic prin care școala își poate verifica „starea de sănătate\" a învățării vizibile."
+  },
+  {
+   "id": "q123",
+   "sursa_document": "Bush, T., Leadership și management educațional, Editura Polirom",
+   "sectiune": "Capitolul 1 — Importanța leadershipului și a managementului educațional",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce avertisment formulează Bush în legătură cu distincția dintre leadership și management?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Că managementul este superior leadershipului în școlile publice"
+    },
+    {
+     "id": "b",
+     "text": "Că nu trebuie construită o dihotomie simplistă între un „leadership\" valorizat și un „management\" devalorizat"
+    },
+    {
+     "id": "c",
+     "text": "Că cele două noțiuni sunt perfect sinonime"
+    },
+    {
+     "id": "d",
+     "text": "Că leadershipul este relevant doar în sistemele descentralizate"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Bush respinge opoziția facilă dintre „leadership\" tratat ca nobil și „management\" tratat ca ceva „murdar\", ori între valori și scopuri, pe de o parte, și proceduri, pe de altă parte. Argumentul lui este că ambele funcții sunt necesare pentru buna funcționare a școlii, chiar dacă analitic pot fi distinse."
+  },
+  {
+   "id": "q124",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 196 alin. (3)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Ce condiție suplimentară prevede legea pentru candidații din învățământul vocațional teologic?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Absolvirea unui masterat în teologie"
+    },
+    {
+     "id": "b",
+     "text": "Obținerea avizului cultului"
+    },
+    {
+     "id": "c",
+     "text": "Vechime de minimum 10 ani în învățământul confesional"
+    },
+    {
+     "id": "d",
+     "text": "Recomandarea consiliului profesoral"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 196 alin. (3) lit. d) cere obținerea avizului cultului, în cazul învățământului vocațional teologic. Condiția se adaugă celor generale — diplomă de licență sau atestat de echivalare, vechime de cel puțin 5 ani și lipsa unei condamnări pentru fapte incompatibile cu funcția didactică. Se corelează cu documentul justificativ privind avizul cultului religios, cerut la dosarul de înscriere potrivit Metodologiei."
+  },
+  {
+   "id": "q125",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. II, art. 12 alin. (1)-(2)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Din ce este constituit sistemul național de învățământ preuniversitar și cum se înființează unitățile?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Doar din unități de stat; se înființează prin hotărâre a consiliului local"
+    },
+    {
+     "id": "b",
+     "text": "Din unități de stat, particulare și confesionale autorizate provizoriu/acreditate; se înființează prin ordin al ministrului educației"
+    },
+    {
+     "id": "c",
+     "text": "Din unități de stat și particulare; se înființează prin hotărâre de Guvern"
+    },
+    {
+     "id": "d",
+     "text": "Din unități acreditate exclusiv; se înființează prin decizie a inspectoratului școlar"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 12 alin. (1) include cele trei categorii — de stat, particulare și confesionale — cu condiția de a fi autorizate să funcționeze provizoriu sau acreditate. Alin. (2) prevede înființarea pe niveluri de învățământ, prin ordin al ministrului educației. Autorizarea provizorie este suficientă pentru apartenența la sistem; acreditarea nu este obligatorie."
+  },
+  {
+   "id": "q126",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. II, art. 13 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce cuprinde învățământul obligatoriu potrivit art. 13 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Învățământul primar și gimnazial"
+    },
+    {
+     "id": "b",
+     "text": "Învățământul preșcolar, primar, gimnazial și liceal"
+    },
+    {
+     "id": "c",
+     "text": "Învățământul antepreșcolar, preșcolar, primar și gimnazial"
+    },
+    {
+     "id": "d",
+     "text": "Învățământul primar, gimnazial și liceal"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 13 alin. (1) include patru niveluri: preșcolar, primar, gimnazial și liceal. Capcanele sunt la ambele capete: învățământul ANTEPREȘCOLAR nu este obligatoriu, dar cel PREȘCOLAR este, iar învățământul liceal a fost inclus în obligativitate — element de noutate față de reglementările anterioare."
+  },
+  {
+   "id": "q127",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. II, art. 13 alin. (2)",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "În ce condiții poate fi dispusă exmatricularea pe perioada învățământului obligatoriu?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Este interzisă în orice situație"
+    },
+    {
+     "id": "b",
+     "text": "Numai în situații grave, în urma încălcării normelor de disciplină în spațiul școlar, pentru protejarea dreptului la educație al celorlalți beneficiari"
+    },
+    {
+     "id": "c",
+     "text": "La decizia discreționară a directorului"
+    },
+    {
+     "id": "d",
+     "text": "După trei absențe nemotivate consecutive"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 13 alin. (2) permite exmatricularea doar în situații grave, ca urmare a încălcării normelor de disciplină în spațiul școlar, iar rațiunea invocată expres de lege este protejarea dreptului la educație al celorlalți beneficiari primari. Este o măsură excepțională, supusă unei proceduri, nu o sancțiune uzuală."
+  },
+  {
+   "id": "q128",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. III, art. 19 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Ce cuprinde rețeaua școlară, potrivit art. 19 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Doar unitățile de învățământ acreditate"
+    },
+    {
+     "id": "b",
+     "text": "Unitățile autorizate provizoriu și acreditate, cele înființate în structura instituțiilor de învățământ superior și unitățile de educație extrașcolară"
+    },
+    {
+     "id": "c",
+     "text": "Doar unitățile de învățământ de stat"
+    },
+    {
+     "id": "d",
+     "text": "Unitățile de învățământ preuniversitar și universitățile"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 19 alin. (1) enumeră trei categorii: unitățile autorizate provizoriu și cele acreditate; unitățile de învățământ preuniversitar înființate în structura sau în subordinea instituțiilor de învățământ superior; unitățile de educație extrașcolară, între care cluburile sportive școlare. Universitățile ca atare nu fac parte din rețeaua școlară preuniversitară."
+  },
+  {
+   "id": "q129",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. V, art. 67 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cum definește legea incluziunea în contextul educației?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ca simplă înscriere a elevilor cu dizabilități în învățământul de masă"
+    },
+    {
+     "id": "b",
+     "text": "Ca proces și măsuri complexe prin care sunt asigurate cadrul și condițiile pentru atingerea finalităților educaționale, punând accentul pe respectarea dreptului la educație al fiecărui copil"
+    },
+    {
+     "id": "c",
+     "text": "Ca obligație exclusivă a învățământului special"
+    },
+    {
+     "id": "d",
+     "text": "Ca program finanțat din fonduri europene"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 67 alin. (1) definește incluziunea ca proces și ansamblu de măsuri complexe, având în centru respectarea dreptului la educație al fiecărui copil, și vizând dezvoltarea comportamentelor adaptative și a abilităților cognitive. Statul GARANTEAZĂ dreptul la o educație incluzivă de calitate tuturor beneficiarilor primari — deci nu este o măsură limitată la o categorie."
+  },
+  {
+   "id": "q130",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VI, art. 85 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care este finalitatea principală a învățământului preuniversitar, potrivit art. 85 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Promovarea examenelor naționale"
+    },
+    {
+     "id": "b",
+     "text": "Formarea competențelor, înțelese ca ansamblu multifuncțional și transferabil de cunoștințe, abilități și atitudini"
+    },
+    {
+     "id": "c",
+     "text": "Transmiterea unui volum determinat de cunoștințe"
+    },
+    {
+     "id": "d",
+     "text": "Orientarea profesională a elevilor"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 85 alin. (1) definește finalitatea ca formarea competențelor, cu accent pe caracterul MULTIFUNCȚIONAL și TRANSFERABIL al ansamblului de cunoștințe, abilități și atitudini. Competențele sunt necesare pentru împlinirea și dezvoltarea personală, integrarea socială și participarea cetățenească, participarea la o economie durabilă și formarea unei concepții de viață."
+  },
+  {
+   "id": "q131",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VI, art. 86 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce prevede legea în privința efectelor modificării planurilor-cadru?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Modificările intră în vigoare imediat după aprobare"
+    },
+    {
+     "id": "b",
+     "text": "Modificările nu produc efecte în timpul anului școlar în curs"
+    },
+    {
+     "id": "c",
+     "text": "Modificările se aplică doar începând cu clasa pregătitoare"
+    },
+    {
+     "id": "d",
+     "text": "Planurile-cadru nu pot fi modificate"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 86 alin. (1) prevede că planurile-cadru se evaluează și, după caz, se revizuiesc periodic, dar „modificările nu vor produce efecte în timpul anului școlar în curs\". Regula protejează predictibilitatea parcursului școlar și este relevantă direct pentru director, care răspunde de aplicarea planurilor-cadru."
+  },
+  {
+   "id": "q132",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VI, art. 86 alin. (1)-(2)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Din ce se constituie trunchiul comun?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Din disciplinele opționale alese de elev"
+    },
+    {
+     "id": "b",
+     "text": "Din disciplinele, domeniile de studiu și modulele de pregătire obligatorii pentru toți elevii"
+    },
+    {
+     "id": "c",
+     "text": "Din disciplinele de examen la evaluările naționale"
+    },
+    {
+     "id": "d",
+     "text": "Din orele de pregătire suplimentară"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 86 alin. (2) definește trunchiul comun ca fiind format din disciplinele/domeniile de studiu/modulele de pregătire OBLIGATORII pentru toți elevii. Planurile-cadru cuprind atât elemente obligatorii, cât și opționale, împreună cu bugetul de timp alocat — trunchiul comun este partea obligatorie."
+  },
+  {
+   "id": "q133",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VII, art. 95 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care sunt scopurile evaluării, potrivit art. 95 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ierarhizarea elevilor și selecția pentru treapta următoare"
+    },
+    {
+     "id": "b",
+     "text": "Orientarea și optimizarea procesului de predare-învățare, precum și gestionarea propriilor rezultate ale învățării"
+    },
+    {
+     "id": "c",
+     "text": "Raportarea statistică la nivel național"
+    },
+    {
+     "id": "d",
+     "text": "Evaluarea activității cadrelor didactice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 95 alin. (1) stabilește două scopuri: orientarea și optimizarea procesului de predare-învățare și gestionarea de către elev a propriilor rezultate. Formularea este apropiată de perspectiva lui Hattie, unde evaluarea este feedback despre impact, nu instrument de clasificare. Toate evaluările se realizează pe baza standardelor naționale de evaluare (alin. 2)."
+  },
+  {
+   "id": "q134",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VII, art. 96 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Cum se exprimă rezultatele evaluării în învățământul primar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prin note de la 1 la 10, inclusiv în clasa pregătitoare"
+    },
+    {
+     "id": "b",
+     "text": "Prin calificative, cu excepția clasei pregătitoare, pe parcursul căreia nu se acordă note sau calificative"
+    },
+    {
+     "id": "c",
+     "text": "Prin calificative, inclusiv în clasa pregătitoare"
+    },
+    {
+     "id": "d",
+     "text": "Prin punctaje specifice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 96 alin. (1) lit. a) prevede calificativele „foarte bine\", „bine\", „suficient\" sau „insuficient\" pentru învățământul primar, EXCEPTÂND clasa pregătitoare, unde nu se acordă nici note, nici calificative. Capcana este varianta c): excepția clasei pregătitoare este ușor de omis. În gimnazial, liceal și postliceal se folosesc note de la 1 la 10."
+  },
+  {
+   "id": "q135",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VIII, art. 105",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Cine sunt beneficiarii SECUNDARI ai învățământului preuniversitar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elevii și preșcolarii"
+    },
+    {
+     "id": "b",
+     "text": "Părinții, tutorii sau reprezentanții legali"
+    },
+    {
+     "id": "c",
+     "text": "Comunitatea locală și societatea în ansamblul ei"
+    },
+    {
+     "id": "d",
+     "text": "Cadrele didactice"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 105 stabilește trei categorii: beneficiari PRIMARI — antepreșcolarii, preșcolarii, elevii și persoanele adulte înscrise; beneficiari SECUNDARI — părinții, tutorii sau reprezentanții legali; beneficiari TERȚIARI — comunitatea locală și societatea în ansamblu. Terminologia apare constant în lege și în metodologii, inclusiv la stabilirea numărului de membri ai consiliului de administrație, calculat pe „beneficiari primari\"."
+  },
+  {
+   "id": "q136",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VIII, art. 105 alin. (1)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Persoanele adulte înscrise într-o unitate de învățământ sunt considerate:",
+   "options": [
+    {
+     "id": "a",
+     "text": "Beneficiari primari"
+    },
+    {
+     "id": "b",
+     "text": "Beneficiari secundari"
+    },
+    {
+     "id": "c",
+     "text": "Beneficiari terțiari"
+    },
+    {
+     "id": "d",
+     "text": "Nu sunt încadrate în nicio categorie"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 105 alin. (1) include expres „persoanele adulte înscrise într-o unitate de învățământ\" printre beneficiarii PRIMARI, alături de antepreșcolari, preșcolari și elevi. Capcana este asocierea automată dintre „primar\" și „copil\": criteriul nu este vârsta, ci calitatea de destinatar direct al actului educațional."
+  },
+  {
+   "id": "q137",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 115 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce calitate are Ministerul Educației potrivit art. 115 alin. (1)?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Organ de specialitate al administrației publice centrale, care elaborează și implementează politica națională în domeniul învățământului preuniversitar"
+    },
+    {
+     "id": "b",
+     "text": "Autoritate administrativă autonomă"
+    },
+    {
+     "id": "c",
+     "text": "Structură de coordonare fără drept de inițiativă financiară"
+    },
+    {
+     "id": "d",
+     "text": "Organism consultativ al Guvernului"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 115 alin. (1) definește Ministerul Educației ca organ de specialitate al administrației publice centrale, care elaborează și implementează politica națională în învățământul preuniversitar și are drept de inițiativă ȘI de execuție în domeniul politicii financiare și al resurselor umane din educație. Tot art. 115 alin. (2) lit. m) este temeiul invocat în preambulul Metodologiei concursului."
+  },
+  {
+   "id": "q138",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. XI, art. 148 alin. (1) lit. a)",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "Ce amendă contravențională prevede legea pentru interzicerea, din culpa părintelui, a participării beneficiarului la programul școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "De la 100 la 1.000 de lei"
+    },
+    {
+     "id": "b",
+     "text": "De la 1.000 la 5.000 de lei"
+    },
+    {
+     "id": "c",
+     "text": "De la 5.000 la 10.000 de lei"
+    },
+    {
+     "id": "d",
+     "text": "De la 500 la 2.500 de lei"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 148 alin. (1) lit. a) sancționează fapta cu amendă de la 1.000 de lei la 5.000 de lei, în măsura în care nu constituie infracțiune. Aceeași sancțiune se aplică și în cazul refuzului semnării contractului educațional. Directorul trebuie să cunoască aceste prevederi pentru gestionarea absenteismului și a relației cu familia."
+  },
+  {
+   "id": "q139",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XIV, art. 210 alin. (1) lit. c)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Pe ce perioadă maximă poate fi suspendat dreptul de înscriere la un concurs pentru obținerea gradației de merit sau pentru ocuparea unei funcții, ca sancțiune disciplinară?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Până la 1 an"
+    },
+    {
+     "id": "b",
+     "text": "Până la 2 ani"
+    },
+    {
+     "id": "c",
+     "text": "Până la 3 ani"
+    },
+    {
+     "id": "d",
+     "text": "Până la 5 ani"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Art. 210 alin. (1) lit. c) prevede suspendarea pe o perioadă de până la 3 ani. Sancțiunea este direct relevantă pentru concursul de directori: art. 3 alin. (1) lit. f) din Metodologie exclude candidatul care a fost sancționat disciplinar cu suspendarea dreptului de a se înscrie la un concurs pentru ocuparea unei funcții de conducere, dacă sancțiunea nu a fost radiată."
+  },
+  {
+   "id": "q140",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 5",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Ce se întâmplă dacă o instituție responsabilă nu își desemnează reprezentantul în comisia pentru proba de interviu?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Comisia funcționează cu număr redus de membri"
+    },
+    {
+     "id": "b",
+     "text": "Inspectorul școlar general desemnează în locul acesteia un inspector școlar sau un metodist al inspectoratului"
+    },
+    {
+     "id": "c",
+     "text": "Proba de interviu se amână"
+    },
+    {
+     "id": "d",
+     "text": "Concursul se anulează în județul respectiv"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 5 prevede că, în lipsa desemnării, inspectorul școlar general desemnează în locul instituției un inspector școlar sau un metodist al inspectoratului școlar. Aceeași procedură se aplică și în cazul neprezentării la proba de interviu a oricărui membru sau supleant — soluția asigură continuitatea concursului, care nu poate fi blocat de pasivitatea unei instituții."
+  },
+  {
+   "id": "q141",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 6",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce prevede Metodologia pentru comisia de evaluare a interviului în cazul unităților cu predare în limbile minorităților naționale?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Comisia se constituie exclusiv din vorbitori ai limbii minorității"
+    },
+    {
+     "id": "b",
+     "text": "Face parte în mod obligatoriu o persoană care cunoaște specificul învățământului în limba maternă"
+    },
+    {
+     "id": "c",
+     "text": "Interviul se susține în limba minorității"
+    },
+    {
+     "id": "d",
+     "text": "Nu există prevederi speciale"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 6 impune prezența obligatorie în comisie a unei persoane care cunoaște SPECIFICUL învățământului în limba maternă. Atenție la nuanță: cerința privește cunoașterea specificului învățământului, nu neapărat componența integrală a comisiei; iar potrivit art. 19, toate probele se desfășoară în limba română."
+  },
+  {
+   "id": "q142",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 7 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Care este componența comisiei de soluționare a contestațiilor?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Președinte și 2 membri, toți inspectori școlari"
+    },
+    {
+     "id": "b",
+     "text": "Președinte — inspector școlar general adjunct/director CCD/inspector școlar — și 4 membri: 3 inspectori școlari și/sau metodiști și un reprezentant al departamentului de resurse umane dintr-o companie"
+    },
+    {
+     "id": "c",
+     "text": "Președinte și 4 membri, toți desemnați de minister"
+    },
+    {
+     "id": "d",
+     "text": "Cinci cadre didactice desemnate de consiliul profesoral"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 7 alin. (1) descrie o comisie de cinci persoane: președintele poate fi inspector școlar general adjunct, director CCD sau inspector școlar, iar dintre cei 4 membri, 3 sunt inspectori școlari și/sau metodiști, iar unul este reprezentant al departamentului de resurse umane din companii mijlocii sau mari. Prezența unui specialist HR din mediul privat este un element de noutate."
+  },
+  {
+   "id": "q143",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 18 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cu cât timp înainte de fiecare probă sunt invitați în scris observatorii?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cu cel puțin 24 de ore înainte"
+    },
+    {
+     "id": "b",
+     "text": "Cu cel puțin 48 de ore înainte"
+    },
+    {
+     "id": "c",
+     "text": "Cu cel puțin 5 zile înainte"
+    },
+    {
+     "id": "d",
+     "text": "Cu cel puțin 15 zile înainte"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 18 alin. (1) prevede transmiterea invitației cu cel puțin 48 de ore înainte de data desfășurării fiecărei probe. Participarea se confirmă printr-un document de desemnare/delegare eliberat de structura reprezentată. Termenul de 24 de ore, care apare de mai multe ori în metodologie, privește contestațiile, nu invitarea observatorilor."
+  },
+  {
+   "id": "q144",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 18 alin. (1)-(2)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce efect are neprezentarea observatorilor la o probă de concurs și ce drepturi au aceștia?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Proba se anulează; observatorii au drept de vot în comisie"
+    },
+    {
+     "id": "b",
+     "text": "Nu afectează legalitatea concursului; observatorii pot consulta documentele, dar nu au atribuții de evaluare"
+    },
+    {
+     "id": "c",
+     "text": "Proba se amână; observatorii pot contesta rezultatele"
+    },
+    {
+     "id": "d",
+     "text": "Nu afectează legalitatea; observatorii nu au acces la documente"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 18 alin. (1) prevede expres că „neprezentarea observatorilor la oricare dintre probele concursului nu afectează legalitatea desfășurării concursului\", iar alin. (2) precizează că secretarii și observatorii asistă la activitățile comisiilor și au dreptul de a consulta documentele, dar nu au atribuții de evaluare. Rolul lor este de transparență, nu de decizie."
+  },
+  {
+   "id": "q145",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. VI, art. 86 alin. (1)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce elemente sunt prevăzute în planurile-cadru de învățământ?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Doar disciplinele obligatorii"
+    },
+    {
+     "id": "b",
+     "text": "Disciplinele, domeniile de studiu, modulele de pregătire obligatorii și opționale, precum și bugetul de timp alocat acestora"
+    },
+    {
+     "id": "c",
+     "text": "Conținuturile detaliate ale fiecărei lecții"
+    },
+    {
+     "id": "d",
+     "text": "Standardele naționale de evaluare"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 86 alin. (1) enumeră disciplinele, domeniile de studiu, modulele de pregătire obligatorii ȘI opționale, împreună cu bugetul de timp alocat. Conținuturile detaliate aparțin programelor școlare, nu planurilor-cadru, iar standardele naționale de evaluare sunt reglementate separat, la art. 95 alin. (2)."
+  },
+  {
+   "id": "q146",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul III, cap. XI, art. 198 alin. (5)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Cum poate fi eliberat din funcție directorul unei unități de învățământ particular sau confesional?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prin decizie a directorului general al DJIP/DMBIP"
+    },
+    {
+     "id": "b",
+     "text": "La propunerea consiliului de administrație, cu votul a 2/3 din membrii săi, prin decizia persoanei juridice fondatoare"
+    },
+    {
+     "id": "c",
+     "text": "Prin ordin al ministrului educației"
+    },
+    {
+     "id": "d",
+     "text": "Prin hotărâre a consiliului profesoral"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 198 alin. (5) prevede o procedură distinctă pentru învățământul particular și confesional: propunerea vine de la consiliul de administrație, cu votul a 2/3 din membrii săi, iar actul de eliberare aparține persoanei juridice FONDATOARE. Diferența față de învățământul de stat reflectă regimul juridic diferit al fondatorului privat."
+  },
+  {
+   "id": "q147",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IX, art. 128 alin. (2)",
+   "tip": "recall",
+   "dificultate": "usor",
+   "prompt": "Ce natură juridică are consiliul de administrație al unității de învățământ de stat?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Organ consultativ"
+    },
+    {
+     "id": "b",
+     "text": "Organ deliberativ de conducere"
+    },
+    {
+     "id": "c",
+     "text": "Organ executiv"
+    },
+    {
+     "id": "d",
+     "text": "Organ de control financiar"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 128 alin. (2) califică expres consiliul de administrație drept ORGANUL DELIBERATIV de conducere al unității de învățământ. Corelativ, art. 195 alin. (1) atribuie directorului conducerea EXECUTIVĂ. Distincția deliberativ/executiv este una dintre cele mai testabile din materie."
+  },
+  {
+   "id": "q148",
+   "sursa_document": "Profilul profesional al managerului școlar, OMEC nr. 3.934/2026",
+   "sectiune": "Capitolul II lit. B — competențe transversale",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Care dintre următoarele NU figurează printre competențele transversale ale managerului școlar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Gândire critică, analitică și sistemică"
+    },
+    {
+     "id": "b",
+     "text": "Competențe de analiză cantitativă și utilizare a datelor"
+    },
+    {
+     "id": "c",
+     "text": "Atragerea de resurse extrabugetare"
+    },
+    {
+     "id": "d",
+     "text": "Inteligență emoțională, autoreglare și maturitate relațională"
+    }
+   ],
+   "correct_option_id": "c",
+   "explicatie": "Atragerea de resurse extrabugetare este competența specifică 5.4, deci aparține nivelului PROFESIONAL (domeniul 5), nu celui transversal. Competențele transversale sunt precondiții cognitive, relaționale și profesionale: gândire critică și sistemică, raționament strategic, analiză cantitativă și utilizarea datelor, competențe digitale, competențe lingvistice, inteligență emoțională și leadership adaptativ."
+  },
+  {
+   "id": "q149",
+   "sursa_document": "Metodologia concursului, OMEC nr. 4.155/2026",
+   "sectiune": "Art. 37",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Cu ce entități încheie inspectoratele școlare parteneriate, potrivit dispozițiilor finale ale Metodologiei?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Exclusiv cu universități"
+    },
+    {
+     "id": "b",
+     "text": "Cu universități, camere de comerț și industrie, companii și organizații neguvernamentale"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv cu autoritățile publice locale"
+    },
+    {
+     "id": "d",
+     "text": "Cu alte inspectorate școlare"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 37, din capitolul V — Dispoziții finale, prevede încheierea de parteneriate cu universități, camere de comerț și industrie, companii și organizații neguvernamentale. Aceste parteneriate susțin, printre altele, desemnarea membrilor din mediul economic în comisiile de concurs, prevăzută de art. 198 alin. (2) din Legea nr. 198/2023."
+  },
+  {
+   "id": "q150",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. III, art. 23 alin. (1) lit. c)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Care sunt efectivele unei clase din învățământul primar?",
+   "options": [
+    {
+     "id": "a",
+     "text": "În medie 18 elevi, minimum 12 și maximum 24"
+    },
+    {
+     "id": "b",
+     "text": "În medie 20 de elevi, minimum 12 și maximum 28"
+    },
+    {
+     "id": "c",
+     "text": "În medie 23 de elevi, minimum 16 și maximum 30"
+    },
+    {
+     "id": "d",
+     "text": "În medie 25 de elevi, minimum 15 și maximum 30"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 23 alin. (1) lit. c) stabilește pentru învățământul primar o medie de 18 elevi, cu minimum 12 și maximum 24. Variantele b) și c) reproduc exact cifrele pentru gimnaziu (20/12/28), respectiv liceu (23/16/30) — efectivele cresc progresiv odată cu nivelul, iar confuzia între ele este cea mai frecventă."
+  },
+  {
+   "id": "q151",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. III, art. 23 alin. (1) lit. d) și f)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Care este efectivul MAXIM al unei clase de gimnaziu, respectiv de liceu?",
+   "options": [
+    {
+     "id": "a",
+     "text": "24 la gimnaziu, 28 la liceu"
+    },
+    {
+     "id": "b",
+     "text": "28 la gimnaziu, 30 la liceu"
+    },
+    {
+     "id": "c",
+     "text": "30 la gimnaziu, 32 la liceu"
+    },
+    {
+     "id": "d",
+     "text": "28 la ambele"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Gimnaziul: în medie 20, minimum 12, maximum 28 (lit. d). Liceul, inclusiv cel dual: în medie 23, minimum 16, maximum 30 (lit. f). Pragurile sunt esențiale pentru director la constituirea formațiunilor de studiu și la fundamentarea proiectului planului de școlarizare."
+  },
+  {
+   "id": "q152",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. III, art. 23 alin. (1) lit. g)-h)",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Pe ce grupe se desfășoară instruirea practică și pregătirea de specialitate?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Grupe de minimum 8 și maximum 15 elevi"
+    },
+    {
+     "id": "b",
+     "text": "Grupe de minimum 4 și maximum 10 elevi"
+    },
+    {
+     "id": "c",
+     "text": "Grupe de minimum 12 și maximum 24 de elevi"
+    },
+    {
+     "id": "d",
+     "text": "Nu există limite legale"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 23 alin. (1) lit. g) prevede grupe de minimum 8 și maximum 15 elevi pentru instruirea practică și pregătirea de specialitate. Varianta b) reproduce efectivul grupei din învățământul sportiv și de artă (în medie 7, minimum 4, maximum 10), potrivit lit. e). Tot la lit. h), clasele din liceul tehnologic pot fi constituite din maximum 3 grupe cu calificări diferite."
+  },
+  {
+   "id": "q153",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. III, art. 23 alin. (1) lit. i)",
+   "tip": "recall",
+   "dificultate": "avansat",
+   "prompt": "Care sunt efectivele unei clase din învățământul postliceal?",
+   "options": [
+    {
+     "id": "a",
+     "text": "În medie 20 de elevi, minimum 12 și maximum 28"
+    },
+    {
+     "id": "b",
+     "text": "În medie 26 de elevi, minimum 20 și maximum 32"
+    },
+    {
+     "id": "c",
+     "text": "În medie 23 de elevi, minimum 16 și maximum 30"
+    },
+    {
+     "id": "d",
+     "text": "În medie 30 de elevi, minimum 25 și maximum 35"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 23 alin. (1) lit. i) prevede pentru învățământul postliceal o medie de 26 de elevi, cu minimum 20 și maximum 32 — cele mai mari efective din sistem, explicabile prin faptul că elevii sunt adulți."
+  },
+  {
+   "id": "q154",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IV, art. 30 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Ce vârste deservesc creșele și grădinițele ca unități de educație timpurie?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Antepreșcolari între 3 luni și 3 ani, respectiv preșcolari între 3 și 6 ani"
+    },
+    {
+     "id": "b",
+     "text": "Antepreșcolari între 1 și 2 ani, respectiv preșcolari între 2 și 5 ani"
+    },
+    {
+     "id": "c",
+     "text": "Exclusiv preșcolari între 3 și 6 ani"
+    },
+    {
+     "id": "d",
+     "text": "Copii între 6 luni și 7 ani, fără distincție pe niveluri"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 30 alin. (1) stabilește intervalele: 3 luni - 3 ani pentru nivelul antepreșcolar și 3 - 6 ani pentru nivelul preșcolar. Creșele și grădinițele fac parte din sistemul național de învățământ preuniversitar și oferă servicii integrate de educație, cu evaluări anuale finalizate printr-un raport descriptiv de evaluare."
+  },
+  {
+   "id": "q155",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IV, art. 31 alin. (2)",
+   "tip": "capcana",
+   "dificultate": "avansat",
+   "prompt": "Ce condiție de vârstă trebuie îndeplinită pentru înscrierea în clasa pregătitoare?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Împlinirea vârstei de 6 ani până la 31 decembrie a anului în care se face înscrierea"
+    },
+    {
+     "id": "b",
+     "text": "Împlinirea vârstei de 6 ani până la 31 august a anului în care se face înscrierea"
+    },
+    {
+     "id": "c",
+     "text": "Împlinirea vârstei de 7 ani până la începerea anului școlar"
+    },
+    {
+     "id": "d",
+     "text": "Împlinirea vârstei de 5 ani până la 1 septembrie"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 31 alin. (2) prevede înscrierea copiilor care au urmat învățământul preșcolar și împlinesc 6 ani până la 31 AUGUST în anul înscrierii. Data de 31 decembrie, din varianta a), corespunde unor reglementări anterioare și este capcana clasică. Înscrierea se face potrivit unei metodologii aprobate prin ordin de ministru."
+  },
+  {
+   "id": "q156",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IV, art. 31 alin. (1) și art. 32 alin. (1)",
+   "tip": "clasificare",
+   "dificultate": "mediu",
+   "prompt": "Ce clase cuprinde învățământul primar, respectiv cel gimnazial?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Primar: clasele I-IV; gimnazial: clasele V-IX"
+    },
+    {
+     "id": "b",
+     "text": "Primar: clasa pregătitoare și clasele I-IV; gimnazial: clasele V-VIII"
+    },
+    {
+     "id": "c",
+     "text": "Primar: clasele I-V; gimnazial: clasele VI-VIII"
+    },
+    {
+     "id": "d",
+     "text": "Primar: clasa pregătitoare și clasele I-V; gimnazial: clasele VI-IX"
+    }
+   ],
+   "correct_option_id": "b",
+   "explicatie": "Art. 31 alin. (1) include în învățământul primar clasa pregătitoare și clasele I-IV, iar art. 32 alin. (1) definește gimnaziul ca ansamblul claselor V-VIII. Ambele niveluri funcționează, de regulă, cu program de dimineață — pentru primar, obligatoriu începând cu anul școlar 2029-2030, iar pentru clasa a VIII-a, începând cu anul 2030."
+  },
+  {
+   "id": "q157",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IV, art. 32 alin. (2)",
+   "tip": "recall",
+   "dificultate": "mediu",
+   "prompt": "Ce tip de program este prevăzut expres pentru încurajarea finalizării învățământului obligatoriu la nivel gimnazial?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Programe de tip „Școala după școală\""
+    },
+    {
+     "id": "b",
+     "text": "Programe de tip „A doua șansă\""
+    },
+    {
+     "id": "c",
+     "text": "Programe de mentorat individual"
+    },
+    {
+     "id": "d",
+     "text": "Programe de învățământ dual"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 32 alin. (2) prevede că, pentru încurajarea finalizării învățământului obligatoriu, elevii pot participa la programe de tip „Școala după școală\" dedicate învățământului gimnazial. Programul „A doua șansă\" se adresează persoanelor care au depășit vârsta de școlarizare și nu și-au finalizat studiile, fiind o altă instituție juridică."
+  },
+  {
+   "id": "q158",
+   "sursa_document": "Legea învățământului preuniversitar nr. 198/2023",
+   "sectiune": "Titlul I, cap. IV, art. 56",
+   "tip": "clasificare",
+   "dificultate": "avansat",
+   "prompt": "Din câți elevi pot fi alcătuite, ca regulă, formațiunile de studiu organizate cu persoanele private de libertate?",
+   "options": [
+    {
+     "id": "a",
+     "text": "Din 8-12 elevi"
+    },
+    {
+     "id": "b",
+     "text": "Din 12-24 de elevi"
+    },
+    {
+     "id": "c",
+     "text": "Din 4-6 elevi"
+    },
+    {
+     "id": "d",
+     "text": "Din 16-30 de elevi"
+    }
+   ],
+   "correct_option_id": "a",
+   "explicatie": "Art. 56 alin. (1) prevede formațiuni de 8-12 elevi. Alin. (2) permite, în situații temeinic justificate și cu aprobarea DJIP/DMBIP, constituirea de grupe de 4-6 elevi sau majorarea efectivului peste maximul stabilit, în funcție de posibilitățile logistice ale locului de detenție, dar nu mai mult de 20 de elevi. Varianta c) descrie excepția, nu regula."
+  }
+ ]
+}

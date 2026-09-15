@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concurs Directori 2026 - Platformă Pregătire</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* Auth Section */
+    .auth-section {
+      padding: 40px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .auth-section.hidden {
+      display: none;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .toggle-text {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .toggle-text a {
+      color: #667eea;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .error-message {
+      color: #e74c3c;
+      font-size: 14px;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #fadbd8;
+      border-radius: 4px;
+    }
+
+    .success-message {
+      color: #27ae60;
+      font-size: 14px;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #d5f4e6;
+      border-radius: 4px;
+    }
+
+    /* Main App Section */
+    .app-section {
+      display: none;
+      padding: 30px;
+    }
+
+    .app-section.active {
+      display: block;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .tab-btn {
+      padding: 12px 20px;
+      background: none;
+      color: #666;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+      width: auto;
+    }
+
+    .tab-btn.active {
+      color: #667eea;
+      border-bottom-color: #667eea;
+    }
+
+    .tab-btn:hover {
+      transform: none;
+      box-shadow: none;
+      color: #667eea;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Exam Section */
+    .question-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 4px solid #667eea;
+    }
+
+    .question-text {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .option {
+      padding: 15px;
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 14px;
+    }
+
+    .option:hover {
+      border-color: #667eea;
+      background: #f8f9ff;
+    }
+
+    .option input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .option.selected {
+      border-color: #667eea;
+      background: #f0f3ff;
+    }
+
+    .option.correct {
+      border-color: #27ae60;
+      background: #d5f4e6;
+    }
+
+    .option.incorrect {
+      border-color: #e74c3c;
+      background: #fadbd8;
+    }
+
+    .source-text {
+      font-size: 12px;
+      color: #999;
+      margin-top: 15px;
+      font-style: italic;
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #f0f3ff;
+      border-radius: 6px;
+    }
+
+    /* Dashboard Section */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    .card-item:last-child {
+      border-bottom: none;
+    }
+
+    .card-item strong {
+      color: #667eea;
+    }
+
+    /* User Profile */
+    .user-profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .user-email {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .logout-btn {
+      padding: 8px 16px;
+      width: auto;
+      font-size: 14px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+    }
+
+    .config-error {
+      display: none;
+      margin: 30px;
+      padding: 20px;
+      background: #fadbd8;
+      border: 1px solid #e74c3c;
+      border-left: 4px solid #e74c3c;
+      border-radius: 6px;
+      color: #922b21;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .config-error code {
+      background: rgba(0, 0, 0, 0.08);
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 13px;
+      word-break: break-all;
+    }
+
+    .demo-badge {
+      display: none;
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      background: #fef5e7;
+      border-left: 4px solid #f39c12;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #7e5109;
+    }
+
+    .save-status {
+      font-size: 12px;
+      margin-top: 10px;
+      min-height: 16px;
+    }
+
+    .option input[type="radio"]:disabled + strong,
+    .option input[type="radio"]:disabled {
+      cursor: default;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: #eee;
+      color: #777;
+      vertical-align: middle;
+    }
+
+    .badge.upcoming {
+      background: #d5f4e6;
+      color: #1e8449;
+    }
+
+    .card-item.past {
+      opacity: 0.55;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      background: white;
+    }
+
+    .positions-count {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .user-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .user-county {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* ===== Mod studiu (grile cu raspunsuri) ===== */
+    .study-toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .study-toolbar .form-group {
+      margin-bottom: 0;
+      flex: 1 1 200px;
+    }
+
+    .study-item {
+      background: #f9f9f9;
+      border-left: 4px solid #667eea;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .study-item .q {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .study-item .q .num {
+      color: #667eea;
+      margin-right: 6px;
+    }
+
+    .study-opt {
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #555;
+    }
+
+    .study-opt.is-correct {
+      background: #d5f4e6;
+      color: #14663d;
+      font-weight: 600;
+    }
+
+    .study-meta {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #999;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      display: inline-block;
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: #eef1ff;
+      color: #4a56b8;
+      font-weight: 600;
+    }
+
+    .explanation {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: #f4f6ff;
+      border-left: 3px solid #667eea;
+      border-radius: 5px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .explanation strong {
+      color: #4a56b8;
+    }
+
+    .chip.diff-usor    { background: #d5f4e6; color: #1e8449; }
+    .chip.diff-mediu   { background: #fef5e7; color: #9c640c; }
+    .chip.diff-avansat { background: #fadbd8; color: #922b21; }
+
+    /* ===== Teste multiple ===== */
+    .test-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .test-card {
+      border: 1px solid #e1e4ef;
+      border-radius: 10px;
+      padding: 16px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .test-card h4 { margin: 0; font-size: 16px; color: #333; }
+    .test-card .test-sub { font-size: 12px; color: #888; }
+
+    .test-card .test-state {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .test-card.done      { border-color: #27ae60; }
+    .test-card.done h4   { color: #1e8449; }
+    .test-card.failed    { border-color: #e74c3c; }
+    .test-card.failed h4 { color: #922b21; }
+
+    .test-card button {
+      margin-top: auto;
+      padding: 9px 12px;
+      font-size: 14px;
+    }
+
+    .runner-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .link-btn {
+      background: none;
+      border: none;
+      color: #667eea;
+      cursor: pointer;
+      padding: 0;
+      font-size: 14px;
+      width: auto;
+    }
+
+    .finish-btn { margin-top: 12px; }
+
+    .result-card {
+      border-radius: 10px;
+      padding: 22px;
+      background: #fff;
+      border: 1px solid #e1e4ef;
+    }
+
+    .result-grade {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .result-card.pass .result-grade { color: #1e8449; }
+    .result-card.fail .result-grade { color: #922b21; }
+
+    .result-verdict { font-size: 17px; font-weight: 600; margin: 6px 0 18px; }
+
+    .result-breakdown { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .result-breakdown th,
+    .result-breakdown td { text-align: left; padding: 7px 6px; border-bottom: 1px solid #eef0f6; }
+    .result-breakdown td.num { text-align: right; white-space: nowrap; }
+    .result-breakdown tr.weak td { color: #922b21; font-weight: 600; }
+
+    .result-advice {
+      margin-top: 18px;
+      padding: 14px;
+      background: #f4f6ff;
+      border-left: 3px solid #667eea;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .result-advice ul { margin: 8px 0 0 18px; }
+
+    .result-actions { display: flex; gap: 10px; margin-top: 18px; }
+
+    /* ===== Resurse ===== */
+    .res-group-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #444;
+      margin: 22px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .res-group-title:first-child {
+      margin-top: 0;
+    }
+
+    .res-item {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid #eee;
+      border-left: 4px solid #667eea;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow .2s, transform .2s;
+    }
+
+    a.res-item:hover {
+      box-shadow: 0 4px 14px rgba(102, 126, 234, .18);
+      transform: translateY(-1px);
+    }
+
+    .res-item .t {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .res-item .d {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .res-item .m {
+      margin-top: 8px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .chip.official {
+      background: #d5f4e6;
+      color: #1e8449;
+    }
+
+    .chip.unofficial {
+      background: #fef5e7;
+      color: #9c640c;
+    }
+
+    /* ===== Harta transparenta ===== */
+    .map-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .map-layout { grid-template-columns: 1fr; }
+    }
+
+    .map-wrap {
+      background: #f7f8fc;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .ro-map {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .ro-map .county {
+      /* Rezerva: culoarea reala vine din `style` inline, calculata pe numarul
+         de posturi. Un atribut `fill` ar fi pierdut in fata acestei reguli. */
+      fill: #dfe3f3;
+      stroke: #fff;
+      stroke-width: 1.2;
+      cursor: pointer;
+      transition: fill .15s;
+    }
+
+    .ro-map .county:hover {
+      fill: #4a56b8 !important;
+    }
+
+    .ro-map .county.selected {
+      stroke: #26306b;
+      stroke-width: 2.5;
+    }
+
+    .ro-map .county-label {
+      font-size: 15px;
+      font-weight: 700;
+      fill: #3b3f5c;
+      pointer-events: none;
+      text-anchor: middle;
+      paint-order: stroke;
+      stroke: rgba(255, 255, 255, .85);
+      stroke-width: 3px;
+    }
+
+    .map-legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .legend-scale {
+      display: flex;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .legend-scale i {
+      width: 26px;
+      height: 12px;
+      display: block;
+    }
+
+    .county-panel {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+      border-left: 4px solid #667eea;
+      min-height: 260px;
+    }
+
+    .county-panel h3 {
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    .county-panel .sub {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+
+    .county-stats {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      flex: 1 1 90px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat b {
+      display: block;
+      font-size: 22px;
+      color: #4a56b8;
+    }
+
+    .stat span {
+      font-size: 11px;
+      color: #888;
+    }
+
+    .school-item {
+      background: #fff;
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .school-item .nm {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .school-item .pos {
+      font-size: 13px;
+      color: #555;
+      padding: 3px 0;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>📚 Concurs Directori 2026</h1>
+      <p>Platformă de pregătire + Transparență</p>
+    </div>
+
+    <!-- Afișat doar dacă config.js nu e completat corect -->
+    <div class="config-error" id="configError"></div>
+
+    <!-- Auth Section -->
+    <div class="auth-section" id="authSection">
+      <div id="loginForm">
+        <h2 style="margin-bottom: 20px; color: #333;">Conectare</h2>
+        <div id="authError"></div>
+        <form id="loginFormEl" novalidate>
+          <div class="form-group">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" autocomplete="email" placeholder="ion@example.com">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Parolă:</label>
+            <input type="password" id="loginPassword" autocomplete="current-password" placeholder="••••••••">
+          </div>
+          <button type="submit" id="loginBtn">Conectare</button>
+        </form>
+        <div class="toggle-text">
+          Nu ai cont? <a id="toSignUp">Înregistrare</a>
+        </div>
+      </div>
+
+      <div id="signupForm" style="display: none;">
+        <h2 style="margin-bottom: 20px; color: #333;">Înregistrare</h2>
+        <div id="signupError"></div>
+        <form id="signupFormEl" novalidate>
+          <div class="form-group">
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" autocomplete="email" placeholder="ion@example.com">
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Parolă:</label>
+            <input type="password" id="signupPassword" autocomplete="new-password" placeholder="minim 6 caractere">
+          </div>
+          <div class="form-group">
+            <label for="signupCounty">Județ (opțional):</label>
+            <input type="text" id="signupCounty" placeholder="ex: Gorj">
+          </div>
+          <button type="submit" id="signupBtn">Înregistrare</button>
+        </form>
+        <div class="toggle-text">
+          Ai deja cont? <a id="toLogin">Conectare</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Section -->
+    <div class="app-section" id="appSection">
+      <!-- User Profile -->
+      <div class="user-profile">
+        <span class="user-meta">
+          <span class="user-email" id="userEmail"></span>
+          <span class="user-county" id="userCounty"></span>
+        </span>
+        <button class="logout-btn" id="logoutBtn" type="button">Deconectare</button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" type="button" data-tab="exam">📝 Teste</button>
+        <button class="tab-btn" type="button" data-tab="study">📖 Grile &amp; răspunsuri</button>
+        <button class="tab-btn" type="button" data-tab="resources">📚 Resurse</button>
+        <button class="tab-btn" type="button" data-tab="map">🗺️ Transparență</button>
+        <button class="tab-btn" type="button" data-tab="calendar">📅 Calendar</button>
+        <button class="tab-btn" type="button" data-tab="positions">💼 Posturi Vacante</button>
+      </div>
+
+      <!-- Exam Tab -->
+      <div class="tab-content active" id="examTab">
+        <div class="demo-badge" id="demoBadge">
+          ⚠️ Tabelul <code>questions</code> e gol — vezi o întrebare demo.
+          Răspunsurile <strong>nu</strong> se salvează. Rulează <code>seed.sql</code> în Supabase.
+        </div>
+        <div id="testPicker">
+          <p style="color:#666;font-size:14px;margin-bottom:18px;">
+            Fiecare test are structura probei de concurs: întrebări din toate capitolele,
+            prag de promovare <strong>nota 7</strong>. La final vezi dacă ai promovat și
+            pe ce capitole stai cel mai prost.
+          </p>
+          <div id="testList" class="test-list"><div class="loading">Se pregătesc testele...</div></div>
+        </div>
+
+        <div id="testRunner" class="hidden">
+          <div class="runner-head">
+            <button type="button" id="backToTests" class="link-btn">← Toate testele</button>
+            <strong id="currentTestName"></strong>
+          </div>
+          <div class="progress-info">
+            <div>Întrebare: <strong id="questionNumber">1</strong> / <strong id="totalQuestions">0</strong></div>
+            <div>Scor: <strong id="score">0</strong>% <small id="answeredCount"></small></div>
+          </div>
+          <div id="questionContainer" class="question-card">
+            <div class="loading">Se încarcă întrebări...</div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button type="button" id="prevBtn" style="flex: 1;">← Înapoi</button>
+            <button type="button" id="nextBtn" style="flex: 1;">Înainte →</button>
+          </div>
+          <button type="button" id="finishBtn" class="finish-btn">Vezi rezultatul testului</button>
+        </div>
+
+        <div id="testResult" class="hidden"></div>
+      </div>
+
+      <!-- Study Tab: toate grilele cu raspunsul corect vizibil -->
+      <div class="tab-content" id="studyTab">
+        <p style="color:#666;font-size:14px;margin-bottom:18px;">
+          Culegere de studiu: alege întâi <strong>capitolul</strong>, apoi ai toate grilele
+          din el, cu varianta corectă marcată, explicația și sursa. Aici nu se calculează
+          scor și nu se salvează nimic — pentru asta folosește tabul „Teste".
+        </p>
+        <div class="study-toolbar">
+          <div class="form-group">
+            <label for="studyCategory">Capitol:</label>
+            <select id="studyCategory"><option value="">— alege un capitol —</option></select>
+          </div>
+          <div class="form-group">
+            <label for="studySearch">Caută în întrebări:</label>
+            <input type="text" id="studySearch" placeholder="ex: consiliu de administrație">
+          </div>
+        </div>
+        <div class="positions-count" id="studyCount"></div>
+        <div id="studyList"><div class="loading">Se încarcă grilele...</div></div>
+      </div>
+
+      <!-- Resources Tab -->
+      <div class="tab-content" id="resourcesTab">
+        <p style="color:#666;font-size:14px;margin-bottom:18px;">
+          Bibliografie și documente utile. Resursele marcate
+          <span class="chip official">oficial</span> trimit către surse publice
+          (Monitorul Oficial, edu.ro); restul sunt materiale ajutătoare.
+        </p>
+        <div class="study-toolbar">
+          <div class="form-group">
+            <label for="resCategory">Categorie:</label>
+            <select id="resCategory"><option value="">Toate categoriile</option></select>
+          </div>
+          <div class="form-group">
+            <label for="resSearch">Caută:</label>
+            <input type="text" id="resSearch" placeholder="ex: buget, metodologie">
+          </div>
+        </div>
+        <div class="positions-count" id="resCount"></div>
+        <div id="resourcesList"><div class="loading">Se încarcă resursele...</div></div>
+      </div>
+
+      <!-- Transparency Tab: harta judetelor -->
+      <div class="tab-content" id="mapTab">
+        <p style="color:#666;font-size:14px;margin-bottom:18px;">
+          Apasă pe un județ ca să vezi școlile cu posturi vacante de director din acel județ.
+          Culoarea arată câte posturi sunt publicate.
+        </p>
+        <div class="map-layout">
+          <div>
+            <div class="map-wrap" id="mapWrap">
+              <div class="loading">Se încarcă harta...</div>
+            </div>
+            <div class="map-legend">
+              <span>Fără posturi</span>
+              <span class="legend-scale" id="legendScale"></span>
+              <span id="legendMax">maxim</span>
+            </div>
+          </div>
+          <div class="county-panel" id="countyPanel">
+            <h3>Alege un județ</h3>
+            <div class="sub">Nu ai selectat încă niciun județ de pe hartă.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendar Tab -->
+      <div class="tab-content" id="calendarTab">
+        <div class="grid">
+          <div class="card">
+            <h3>📅 Calendar Concurs</h3>
+            <div id="calendarList">
+              <div class="loading">Se încarcă calendar...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Positions Tab -->
+      <div class="tab-content" id="positionsTab">
+        <div class="grid">
+          <div class="card">
+            <h3>💼 Posturi Vacante</h3>
+            <div class="form-group">
+              <label for="countyFilter">Județ:</label>
+              <select id="countyFilter">
+                <option value="">Toate județele</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="positionSearch">Caută după școală sau funcție:</label>
+              <input type="text" id="positionSearch" placeholder="ex: Colegiul Național">
+            </div>
+            <div class="positions-count" id="positionsCount"></div>
+            <div id="positionsList">
+              <div class="loading">Se încarcă posturi...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Supabase (versiune fixată, ca un update să nu strice aplicația) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="ro-map.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
