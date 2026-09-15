@@ -1,226 +1,253 @@
-# Platformă Concurs Directori 2026
+# Concurs Directori 2026
 
-Platformă **gratuită** de pregătire pentru concursul de directori din România:
-- 🔐 Cont real (Supabase Auth), progres salvat în cloud
-- 📝 Teste grilă din bibliografia oficială, cu feedback imediat
-- 📖 Culegere de studiu: toate grilele cu răspunsul corect și sursa
-- 📚 Resurse: legislație și documente, cu sursele oficiale marcate
-- 🗺️ Hartă interactivă a județelor, cu posturile vacante de director
-- 📅 Calendarul concursului
-- 💼 Posturi vacante, filtrabile pe județ
+**Platformă gratuită de pregătire și transparență pentru concursul național de ocupare a funcțiilor de director și director adjunct din învățământul preuniversitar din România — sesiunea august–decembrie 2026.**
+
+![Vanilla JS](https://img.shields.io/badge/frontend-Vanilla%20JS-f7df1e)
+![Supabase](https://img.shields.io/badge/backend-Supabase-3ecf8e)
+![Tests](https://img.shields.io/badge/teste-125%20passed-brightgreen)
+![Cost](https://img.shields.io/badge/cost-0%20lei-blue)
 
 ---
 
-## ⚠️ Ce trebuie făcut ACUM (a mai rămas 1 pas)
+## Cuprins
 
-### Pas 1 — ✅ REZOLVAT: Project URL-ul din `config.js`
+- [Despre proiect](#despre-proiect)
+- [Funcționalități](#funcționalități)
+- [Conținut și surse](#conținut-și-surse)
+- [Arhitectură](#arhitectură)
+- [Instalare](#instalare)
+- [Baza de date](#baza-de-date)
+- [Testare](#testare)
+- [Securitate](#securitate)
+- [Limitări cunoscute](#limitări-cunoscute)
+- [Direcții de dezvoltare](#direcții-de-dezvoltare)
+- [Depanare](#depanare)
+- [Precizări](#precizări)
 
-Autentificarea era blocată de un URL greșit. Istoricul bugului:
+---
 
-1. Prima dată, URL-ul conținea un **spațiu** (`https://rafphnsj lxipijihefyus.supabase.co`).
-   `createClient()` arunca `Invalid URL`, scriptul se oprea, toate butoanele
-   rămâneau moarte.
-2. După ce s-a scos spațiul, a rămas **un caracter în plus**: project-ref-ul avea
-   21 de caractere în loc de 20, iar gazda nu exista în DNS. Formatul trecea de
-   validare, deci aplicația nu se plângea la pornire — abia primul login eșua cu
-   „Nu s-a putut contacta Supabase".
+## Despre proiect
 
-Valoarea corectă e deja pusă în `config.js`:
-`https://rafphnsjlxipjihefyus.supabase.co` (verificată: DNS-ul răspunde, cheia
-publică e validă, providerul de email e activ).
+Candidații la funcția de director au de parcurs o bibliografie amplă, iar informațiile despre posturile vacante sunt împrăștiate în zeci de PDF-uri publicate separat de fiecare inspectorat școlar, în formate diferite.
 
-Aplicația verifică acum și lungimea project-ref-ului, deci o greșeală de acest
-tip e semnalată la încărcarea paginii, nu la primul login.
+Platforma răspunde ambelor probleme:
 
-### Pas 2 — rulează migrarea bazei de date
+1. **Pregătire** — grile construite strict pe bibliografia oficială, fiecare cu sursa exactă (act, capitol, articol) și cu explicația răspunsului corect.
+2. **Transparență** — o hartă a României cu posturile vacante extrase din documentele publicate de inspectorate.
 
-În **Supabase → SQL Editor**:
+---
 
-| Situație | Rulează |
+## Funcționalități
+
+| Modul | Descriere |
 |---|---|
-| Ai deja rulat vechiul `schema.sql` | `migration.sql` |
-| Bază de date nouă, de la zero | `schema.sql` |
-| Vrei date de test pentru toate taburile | apoi `seed.sql` |
-
-`migration.sql` adaugă tabelul `resources` (pagina „Resurse") și repară trei
-lucruri care împiedicau salvarea progresului:
-
-1. **Lipsea `UNIQUE(user_id, question_id)`** — `upsert` nu avea pe ce să facă
-   conflict, deci insera un rând nou la fiecare click. Un utilizator care
-   răspundea de 3 ori la aceeași întrebare genera 3 rânduri.
-2. **Lipsea politica RLS de `UPDATE`** — schema veche avea doar `SELECT` și
-   `INSERT`. Un `upsert` care nimerea un rând existent era respins cu
-   *"new row violates row-level security policy"*.
-3. **Coloana se numea `timestamp`** (cuvânt rezervat în SQL) → redenumită
-   `answered_at`.
+| 🔐 **Cont personal** | Autentificare cu email și parolă (Supabase Auth). Progresul se salvează în cloud și se sincronizează între dispozitive. |
+| 📝 **Teste** | Teste în structura probei scrise: câte 20 de itemi, prag de promovare nota 7. Fiecare test conține întrebări din toate capitolele. La final: nota, verdictul (promovat / nepromovat), analiza pe capitole și lista articolelor greșite. |
+| 📖 **Grile & răspunsuri** | Culegere de studiu organizată pe capitole: varianta corectă, explicația, nivelul de dificultate și sursa exactă. Căutare în text, inclusiv în explicații. |
+| 📚 **Resurse** | Bibliografia oficială și documente utile, cu marcaj distinct pentru sursele oficiale (Monitorul Oficial, edu.ro, legislatie.just.ro). |
+| 🗺️ **Transparență** | Hartă interactivă a județelor, colorată după numărul de posturi vacante. Click pe un județ → școlile și posturile de director / director adjunct. |
+| 📅 **Calendar** | Etapele oficiale ale concursului, în ordine cronologică. |
+| 💼 **Posturi vacante** | Lista posturilor, filtrabilă pe județ și căutabilă după denumirea unității. |
 
 ---
 
-## Setup complet (bază de date nouă)
+## Conținut și surse
 
-1. Creează un proiect pe https://supabase.com/ (alege regiune EU).
-2. **SQL Editor** → rulează `schema.sql`, apoi `seed.sql`.
-3. **Settings → API** → copiază `Project URL` și cheia publică în `config.js`.
-4. **Authentication → Providers → Email**: dacă vrei ca utilizatorii să intre
-   imediat după înregistrare, dezactivează *"Confirm email"*. Dacă îl lași
-   activ, aplicația afișează corect mesajul „verifică emailul”.
-5. **Authentication → URL Configuration**: adaugă `http://localhost:5500` la
-   *Redirect URLs*, altfel linkul de confirmare din email nu te aduce înapoi.
-6. Deschide `index.html` cu **Live Server** (VS Code). Nu-l deschide direct ca
-   `file://` — Supabase Auth are nevoie de `http://`.
+Toate datele afișate provin din documente oficiale. Nu există conținut inventat sau completat estimativ.
+
+### Întrebări — 121 de grile
+
+Generate din bibliografia aprobată prin **OMEC nr. 4.622/2026, Anexa nr. 2**:
+
+| Capitol | Grile | Sursă |
+|---|---:|---|
+| Legislație | 82 | Legea învățământului preuniversitar nr. 198/2023 |
+| Profilul managerului școlar | 19 | OMEC nr. 3.934/2026 |
+| Învățarea vizibilă | 11 | J. Hattie, *Învățarea vizibilă*, cap. 9 |
+| Leadership educațional | 9 | T. Bush, *Leadership și management educațional*, cap. 1 |
+
+Fiecare grilă are o dificultate (ușor / mediu / avansat) și un tip (reproducere, clasificare, capcană). Capcanele țintesc confuziile frecvente dintre prevederi apropiate: praguri numerice, termene, distincția aviz / aprobare, excepțiile de la regula generală.
+
+### Calendar
+
+Cele 30 de etape din **Anexa nr. 1 la OMEC nr. 4.622/2026**, de la anunțarea concursului (17 august) până la emiterea deciziilor de numire (16 decembrie, cu efect de la 1 ianuarie 2027).
+
+### Posturi vacante
+
+**3.968 de posturi în 2.553 de unități de învățământ, din 20 de județe:** Bacău, Bihor, Bistrița-Năsăud, Botoșani, Brașov, București, Buzău, Dâmbovița, Galați, Gorj, Ialomița, Mureș, Prahova, Satu Mare, Sălaj, Sibiu, Timiș, Tulcea, Vâlcea, Vrancea.
+
+Datele au fost extrase din PDF-urile publicate de inspectoratele școlare, cu un parser dedicat fiecărui format. Fiecare județ a trecut printr-o verificare de completitudine: numărul de rânduri extrase trebuie să fie egal cu ultimul număr curent din documentul sursă.
+
+Pentru celelalte județe, documentele sunt scanate. Recunoașterea optică (OCR) a dat rezultate diferite la rulări diferite pe același document, așa că acele date **nu au fost publicate**.
 
 ---
 
-## Structura fișierelor
+## Arhitectură
 
 ```
-├── index.html       # Interfață: auth + 6 taburi
-├── config.js        # URL + cheie Supabase   ← singurul fișier de editat
-├── app.js           # Logica aplicației
-├── ro-map.js        # Harta județelor (generată, nu edita manual)
-├── schema.sql       # Structura BD (pentru o bază nouă)
-├── migration.sql    # Reparații pentru o bază deja creată
-├── seed.sql         # Date de TEST (nu oficiale!)
-├── smoke-test.js    # Test automat opțional
-└── README.md
+┌────────────────────────┐        ┌──────────────────────────────┐
+│  Browser               │        │  Supabase                    │
+│                        │  HTTPS │                              │
+│  index.html            │◄──────►│  Auth    — conturi           │
+│  app.js   (Vanilla JS) │        │  Postgres — date + progres   │
+│  ro-map.js (SVG)       │        │  RLS     — izolare pe user   │
+└────────────────────────┘        └──────────────────────────────┘
 ```
+
+- **Fără framework și fără build step** — HTML, CSS și JavaScript simplu. Se poate găzdui pe orice hosting static.
+- **Supabase** asigură autentificarea, baza de date PostgreSQL și politicile de acces (Row Level Security).
+- **Harta** este un SVG generat din conturul oficial al județelor ([Natural Earth](https://www.naturalearthdata.com/), domeniu public), cu proiecție echirectangulară corectată și simplificare Douglas–Peucker.
+
+### Structura fișierelor
+
+```
+files/
+├── index.html                   Interfața: autentificare + 6 module
+├── app.js                       Logica aplicației
+├── config.js                    URL-ul și cheia publică Supabase
+├── ro-map.js                    Harta județelor (generată automat)
+│
+├── schema.sql                   Structura bazei de date
+├── grants.sql                   Drepturile de acces pe tabele
+├── migration.sql                Actualizare pentru baze create cu o versiune veche
+├── calendar-oficial-2026.sql    Calendarul oficial
+├── resources-concurs-2026.sql   Resursele oficiale
+├── intrebari-oficiale.sql       Cele 121 de grile
+├── posturi-reale.sql            Posturile vacante (3.968)
+├── seed.sql                     Date fictive, doar pentru dezvoltare
+│
+├── intrebari-concurs-2026.json  Setul de întrebări în format JSON
+├── posturi-extrase.json         Posturile vacante în format JSON
+└── smoke-test.js                Suita de teste automate
+```
+
+`ro-map.js` este generat automat și nu trebuie editat manual.
 
 ---
 
-## Paginile platformei
+## Instalare
 
-| Tab | Ce face | Sursa datelor |
+### Cerințe
+
+- Un cont gratuit [Supabase](https://supabase.com/)
+- Un server local static, de exemplu extensia **Live Server** din VS Code
+- Node.js, doar pentru rularea testelor
+
+### Pași
+
+1. **Creează un proiect Supabase**, de preferat într-o regiune din UE.
+2. **Inițializează baza de date** — vezi [Baza de date](#baza-de-date).
+3. **Configurează conexiunea** — în Supabase, la *Settings → API*, copiază *Project URL* și cheia publică (`anon` / `publishable`) în `config.js`:
+
+   ```js
+   window.APP_CONFIG = {
+     SUPABASE_URL: 'https://<project-ref>.supabase.co',
+     SUPABASE_ANON_KEY: '<cheia-publică>',
+   };
+   ```
+
+4. **Configurează autentificarea** din *Authentication*:
+   - *Providers → Email*: lasă *Confirm email* activ în producție; dezactivează-l doar pentru dezvoltare.
+   - *URL Configuration*: adaugă adresa aplicației (de exemplu `http://localhost:5500`) la *Redirect URLs*.
+5. **Pornește aplicația** — deschide `index.html` prin Live Server. Protocolul `file://` nu este suportat de Supabase Auth.
+
+### Publicare
+
+Aplicația este statică, deci se poate publica direct pe Netlify, Vercel, Cloudflare Pages sau GitHub Pages. După publicare, adaugă adresa finală la *Redirect URLs* în Supabase.
+
+---
+
+## Baza de date
+
+Rulează fișierele în **Supabase → SQL Editor**, în această ordine:
+
+| # | Fișier | Rol |
+|:-:|---|---|
+| 1 | `schema.sql` | Creează tabelele și politicile RLS |
+| 2 | `grants.sql` | Acordă drepturile pe tabele rolurilor `anon` și `authenticated` |
+| 3 | `calendar-oficial-2026.sql` | Încarcă calendarul oficial |
+| 4 | `resources-concurs-2026.sql` | Încarcă resursele |
+| 5 | `intrebari-oficiale.sql` | Încarcă grilele |
+| 6 | `posturi-reale.sql` | Încarcă posturile vacante |
+
+Toate fișierele de date pot fi rulate de mai multe ori fără să dubleze înregistrările.
+
+> ⚠️ **Nu rula `seed.sql` pe o bază cu date reale.** Fișierul golește tabelele `vacant_positions` și `resources` și pune în loc date fictive. Folosește-l doar într-un mediu de dezvoltare.
+
+### Tabele
+
+| Tabel | Conținut | Acces |
 |---|---|---|
-| 📝 **Teste** | Test grilă: răspunzi, primești feedback imediat, scorul și răspunsurile se salvează în contul tău și se sincronizează între dispozitive. | `questions` + `exam_progress` |
-| 📖 **Grile & răspunsuri** | Culegere de studiu: toate întrebările cu varianta corectă și sursa vizibile de la început. Filtre pe categorie și căutare în text. Nu calculează scor și nu salvează nimic. | `questions` |
-| 📚 **Resurse** | Bibliografie și documente, grupate pe categorii. Fiecare resursă e marcată **oficial** (link către Monitorul Oficial / edu.ro) sau **neoficial**. | `resources` |
-| 🗺️ **Transparență** | Harta interactivă a României. Culoarea fiecărui județ arată câte posturi vacante sunt publicate; click pe județ → lista școlilor și a posturilor din el. | `vacant_positions` |
-| 📅 **Calendar** | Evenimentele concursului, cronologic; cele trecute apar estompate. | `calendar_events` |
-| 💼 **Posturi Vacante** | Aceleași posturi ca pe hartă, dar ca listă filtrabilă pe județ și căutare după școală. | `vacant_positions` |
-
-### Despre hartă (`ro-map.js`)
-
-Fișierul e **generat**, nu scris de mână: conturul celor 41 de județe + București
-vine din [Natural Earth](https://www.naturalearthdata.com/) (admin-1, 10m,
-domeniu public), proiectat echirectangular cu corecție `cos(lat)` și simplificat
-Douglas-Peucker. Nu îl edita manual.
-
-Numele județelor din hartă și cele din coloana `county` sunt comparate
-**normalizat** — fără diacritice, fără prefixul „Municipiul". Așa că `Timiș`,
-`Timis` și `Municipiul București` din baza de date ajung în județul corect de
-pe hartă, indiferent cum au fost tastate.
-
-### Administrarea resurselor
-
-Resursele se adaugă din **Supabase → Table Editor → `resources`**, fără să
-atingi codul:
-
-| Coloană | Rol |
-|---|---|
-| `title`, `description` | Ce se afișează pe card |
-| `url` | Link. Dacă e gol, cardul se afișează fără link (nu ca link mort) |
-| `category` | Grupul sub care apare (ex. „Legislație") |
-| `kind` | Eticheta mică: lege, ordin, ghid, model… |
-| `official` | `true` → insignă verde „oficial" |
-| `sort_order` | Ordinea în cadrul categoriei (mic = sus) |
+| `questions` | Grilele, cu explicație, dificultate și sursă | citire publică |
+| `exam_progress` | Răspunsurile fiecărui candidat | fiecare utilizator își vede doar propriile rânduri |
+| `calendar_events` | Etapele concursului | citire publică |
+| `vacant_positions` | Posturile vacante | citire publică |
+| `resources` | Bibliografie și documente | citire publică |
 
 ---
 
-## ⚠️ Despre datele din `seed.sql`
+## Testare
 
-Datele din `seed.sql` sunt **exemple pentru testare**, nu informații oficiale:
-datele din calendar sunt inventate, școlile din posturile vacante sunt fictive,
-iar întrebările trebuie verificate față de bibliografia oficială.
-
-Fiind o platformă de *transparență*, credibilitatea ei depinde de faptul că
-informația afișată e reală. Înlocuiește-le cu date din ordinele de ministru și
-de pe site-urile ISJ **înainte** de a publica platforma.
-
-**Singura excepție**: rândurile din `resources` marcate `official = true` sunt
-linkuri reale, verificate (Legea 198/2023, Legea 199/2023, Codul muncii, Legea
-500/2002, edu.ro, ARACIP). Verifică totuși dacă actele au fost între timp
-modificate. Cele două rânduri marcate `official = false` sunt demonstrative.
-
----
-
-## Test automat (opțional)
-
-Rulează întreaga aplicație într-un DOM simulat, cu un Supabase mock — verifică
-autentificarea, salvarea răspunsurilor, sincronizarea progresului, modul de
-studiu, resursele, harta județelor și filtrarea pe județe (100 de verificări).
+Suita rulează aplicația completă într-un DOM simulat (jsdom), cu un client Supabase simulat care reproduce și politicile RLS.
 
 ```bash
-npm install jsdom
-node smoke-test.js
+npm install
+node files/smoke-test.js
 ```
 
----
-
-## Cum se verifică criteriile de acceptanță
-
-| Criteriu | Cum verifici |
-|---|---|
-| Înregistrare cu email/parolă | Tab „Înregistrare”, completează, trimite |
-| Login + dashboard personalizat | Emailul și județul apar sus, cu buton Deconectare |
-| Răspunsurile ajung în Supabase | Supabase → Table Editor → `exam_progress` |
-| Calendarul se vede cronologic | Tab 📅, evenimentele trecute apar estompate |
-| Filtrare pe județ | Tab 💼 → alege „Gorj” din dropdown |
-| Progresul se sincronizează | Login în alt browser → scorul e același |
-| Grilele cu răspuns se văd | Tab 📖 → varianta corectă e verde, cu sursa dedesubt |
-| Resursele se deschid | Tab 📚 → click pe o resursă oficială → se deschide în tab nou |
-| Harta reacționează | Tab 🗺️ → click pe județul tău → apar școlile din el |
-| Fără erori în consolă | F12 → Console |
+**125 de verificări**, grupate în 13 secțiuni: validarea configurației, autentificare, testele și rezultatul final, salvarea și sincronizarea progresului, modul demo, culegerea de studiu, explicațiile, resursele, harta, potrivirea numelor de județe, filtrarea posturilor și protecția împotriva injecției HTML.
 
 ---
 
-## Note tehnice
+## Securitate
 
-- **Cheia publică din `config.js` poate fi expusă** — asta e normal pentru
-  cheile `anon`/`publishable`. Protecția reală vine din politicile RLS din
-  `schema.sql`. Nu pune niciodată cheia `service_role` în frontend.
-- Textul venit din baza de date este escapat înainte de afișare, ca o întrebare
-  care conține `<` sau `"` să nu strice pagina.
-- Versiunea bibliotecii Supabase e fixată (`2.58.0`) în `index.html`, ca un
-  update automat să nu strice aplicația.
-- Filtrarea posturilor se face pe date, nu pe textul din DOM. Varianta veche
-  căuta în tot textul cardului, deci filtrul „Gorj” prindea și o școală din alt
-  județ care avea „Gorj” în denumire.
+- **Cheia din `config.js` este publică prin natura ei.** Cheile `anon` / `publishable` sunt gândite să ajungă în browser. Accesul la date este controlat de politicile RLS și de drepturile din `grants.sql`.
+- **Cheia `service_role` nu trebuie pusă niciodată în frontend** și nici în repository.
+- **Progresul este izolat pe utilizator** — politicile RLS permit fiecărui cont să citească și să modifice exclusiv propriile răspunsuri.
+- **Tot textul venit din baza de date este escapat** înainte de afișare.
+- **Versiunea bibliotecii Supabase este fixată** (`2.58.0`), ca o actualizare automată să nu modifice comportamentul aplicației.
+- **Configurația este validată la pornire** — un URL greșit (spațiu, lungime incorectă a identificatorului de proiect) este semnalat la încărcarea paginii, nu abia la primul login eșuat.
 
 ---
 
-## Următorii pași (discutate, neimplementate)
+## Limitări cunoscute
 
-1. **Statistici pe timp** — grafic cu evoluția scorului. Necesită folosirea
-   coloanei `answered_at` (adăugată deja) și o pagină nouă.
-2. **Simulare probă scrisă** — 20 întrebări, cronometru 60 min, prag 7.00.
-   Necesită un tabel nou `exam_sessions` (started_at, finished_at, score),
-   pentru că simulările sunt încercări separate, nu progres cumulativ.
-3. **Export PDF** — cel mai simplu prin `window.print()` și un CSS de print;
-   fără biblioteci suplimentare. Util mai ales pentru tabul „Grile & răspunsuri".
-4. **Panou de administrare** — import CSV de întrebări și de resurse. Are nevoie
-   de o coloană de rol pe utilizator și de politici RLS de `INSERT` pe
-   `questions` / `resources`.
-5. **Date reale pe hartă** — momentan posturile din `seed.sql` sunt fictive.
-   Harta devine cu adevărat utilă abia cu anunțurile reale de pe site-urile ISJ.
+- **Acoperire parțială a posturilor vacante** — 20 de județe din 42. Restul au publicat documente scanate, iar extragerea automată nu a fost suficient de fiabilă pentru a fi publicată.
+- **Paginarea posturilor** — API-ul Supabase returnează implicit maximum 1.000 de rânduri pe cerere, iar încărcarea posturilor nu folosește încă paginare. Până la corectare, harta și lista afișează doar o parte din cele 3.968 de posturi.
+- **Bibliografie incompletă în setul de grile** — *Cadrul de referință* (OMEC nr. 4.137/2026) și anexa ROFUIP nu au putut fi obținute în format utilizabil, iar din lucrarea lui T. Bush este disponibil doar primul capitol.
 
 ---
 
-## Costuri
+## Direcții de dezvoltare
 
-Supabase (500MB, 50k utilizatori activi/lună) + Netlify/Vercel = **gratuit**.
+- Paginarea încărcării posturilor vacante
+- Extinderea acoperirii la toate județele, pe baza documentelor editabile solicitate inspectoratelor
+- Cronometru de 60 de minute pentru teste, ca la proba scrisă
+- Evoluția scorului în timp
+- Export PDF pentru culegerea de grile
+- Panou de administrare pentru importul de întrebări și resurse
 
 ---
 
-## Troubleshooting
+## Depanare
 
-| Problemă | Cauză |
-|---|---|
-| Mesaj roșu „SUPABASE_URL conține un spațiu” | Curăță `config.js` (vezi Pas 1) |
-| Mesaj „project-ref-ul are N caractere, dar Supabase folosește exact 20” | Ai o literă în plus/minus în URL — copiază-l cu copy/paste din dashboard |
-| „Invalid login credentials” | Parolă greșită, sau contul nu e confirmat pe email |
-| „Nu s-a putut contacta Supabase” | URL greșit sau proiect în pauză (Supabase suspendă proiectele inactive) |
-| Răspunsurile nu se salvează | Nu ai rulat `migration.sql` |
-| Vezi bannerul galben „mod demo” | Tabelul `questions` e gol → rulează `seed.sql` |
-| „Tabelul `resources` nu există încă” | Rulează `migration.sql` (sau `schema.sql`) în SQL Editor |
-| Harta e gri peste tot | Nu ai posturi în `vacant_positions` → rulează `seed.sql` |
-| Harta nu apare deloc | Lipsește `<script src="ro-map.js">` din `index.html` |
+| Simptom | Cauză probabilă | Soluție |
+|---|---|---|
+| Mesaj de configurație la încărcarea paginii | URL-ul din `config.js` e greșit | Copiază *Project URL* direct din Supabase |
+| `permission denied for table …` | Lipsesc drepturile pe tabele | Rulează `grants.sql` |
+| „Invalid login credentials” | Parolă greșită sau cont neconfirmat | Confirmă emailul sau resetează parola |
+| „Nu s-a putut contacta Supabase” | Proiect suspendat din inactivitate | Reactivează proiectul din dashboard |
+| Bannerul „mod demo” | Tabelul `questions` e gol | Rulează `intrebari-oficiale.sql` |
+| Răspunsurile nu se salvează | Bază creată cu o versiune veche a schemei | Rulează `migration.sql` |
+| Harta e gri | Tabelul `vacant_positions` e gol | Rulează `posturi-reale.sql` |
+| Posturile reale au dispărut | A fost rulat `seed.sql` | Rulează din nou `posturi-reale.sql` și `resources-concurs-2026.sql` |
+
+---
+
+## Precizări
+
+Aceasta este o inițiativă independentă, **neafiliată Ministerului Educației și Cercetării** sau vreunui inspectorat școlar.
+
+Conținutul are rol exclusiv de pregătire. Pentru orice decizie privind înscrierea la concurs, sursa de referință rămâne textul actelor normative publicate în Monitorul Oficial și anunțurile oficiale ale inspectoratelor școlare.
+
+Lucrările din bibliografie (Hattie, Bush) sunt protejate de drepturi de autor și nu sunt incluse în acest repository. Grilele formulate pe baza lor au caracter de exercițiu de învățare și trimit la capitolul corespunzător.
